@@ -264,6 +264,9 @@ input:focus{
   	.bestsell .bsr img{
   		top: -123px !important;
   	}
+    .sheetnew {
+      margin-top: 100px !important;
+    }
   }
   @media (min-width: 1451px) and (max-width: 1590px){
   	.container, .container-sm, .container-md, .container-lg, .container-xl {
