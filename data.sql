@@ -4,7 +4,7 @@
  Source Server         : local
  Source Server Type    : SQL Server
  Source Server Version : 15002000
- Source Host           : DESKTOP-ISG2R1R:1433
+ Source Host           : DESKTOP-B621P55\MSSQLSERVER01:1433
  Source Catalog        : MySheetMusic
  Source Schema         : dbo
 
@@ -12,7 +12,7 @@
  Target Server Version : 15002000
  File Encoding         : 65001
 
- Date: 31/05/2021 23:55:51
+ Date: 01/06/2021 17:33:34
 */
 
 
@@ -118,10 +118,13 @@ GO
 -- ----------------------------
 -- Records of CaSi
 -- ----------------------------
-INSERT INTO [dbo].[CaSi] ([Id], [Ten], [Url]) VALUES (N'10000', N'Sơn Tùng MTP', NULL)
+INSERT INTO [dbo].[CaSi] ([Id], [Ten], [Url]) VALUES (N'2021521172421413', N'Mỹ Tâm', NULL)
 GO
 
-INSERT INTO [dbo].[CaSi] ([Id], [Ten], [Url]) VALUES (N'10001', N'Hồ Ngọc Hà', NULL)
+INSERT INTO [dbo].[CaSi] ([Id], [Ten], [Url]) VALUES (N'202152117246831', N'Sơn Tùng MTP', NULL)
+GO
+
+INSERT INTO [dbo].[CaSi] ([Id], [Ten], [Url]) VALUES (N'202152592030460', N'Nàng thơ xứ Huế', N'thuy-chi')
 GO
 
 
@@ -384,6 +387,30 @@ GO
 INSERT INTO [dbo].[HoaDon] ([Id], [IdNguoiDung], [IdSanPham], [Gia], [Ngay], [GiaVN]) VALUES (N'20214835335917', N'1320213422', N'84202134619', NULL, N'2021-04-08 03:53:35.763', N'100000')
 GO
 
+INSERT INTO [dbo].[HoaDon] ([Id], [IdNguoiDung], [IdSanPham], [Gia], [Ngay], [GiaVN]) VALUES (N'20215105619823', N'', N'2942021213750', NULL, N'2021-05-10 05:06:16.043', N'150000')
+GO
+
+INSERT INTO [dbo].[HoaDon] ([Id], [IdNguoiDung], [IdSanPham], [Gia], [Ngay], [GiaVN]) VALUES (N'2021514222653930', N'', N'1442021213128', NULL, N'2021-05-14 22:26:51.677', N'50000')
+GO
+
+INSERT INTO [dbo].[HoaDon] ([Id], [IdNguoiDung], [IdSanPham], [Gia], [Ngay], [GiaVN]) VALUES (N'2021514224836717', N'', N'2942021213750', NULL, N'2021-05-14 22:48:34.127', N'150000')
+GO
+
+INSERT INTO [dbo].[HoaDon] ([Id], [IdNguoiDung], [IdSanPham], [Gia], [Ngay], [GiaVN]) VALUES (N'2021517222124333', N'', N'274202184821', NULL, N'2021-05-17 22:21:24.097', N'99000')
+GO
+
+INSERT INTO [dbo].[HoaDon] ([Id], [IdNguoiDung], [IdSanPham], [Gia], [Ngay], [GiaVN]) VALUES (N'2021520201743765', N'', N'35202142857', NULL, N'2021-05-20 20:17:42.977', N'100000')
+GO
+
+INSERT INTO [dbo].[HoaDon] ([Id], [IdNguoiDung], [IdSanPham], [Gia], [Ngay], [GiaVN]) VALUES (N'202152185940453', N'', N'9420211135', NULL, N'2021-05-02 18:59:38.733', N'50000')
+GO
+
+INSERT INTO [dbo].[HoaDon] ([Id], [IdNguoiDung], [IdSanPham], [Gia], [Ngay], [GiaVN]) VALUES (N'2021522222828189', N'', N'1052021231225', NULL, N'2021-05-22 22:28:25.453', N'150000')
+GO
+
+INSERT INTO [dbo].[HoaDon] ([Id], [IdNguoiDung], [IdSanPham], [Gia], [Ngay], [GiaVN]) VALUES (N'20215714922848', N'', N'9420211135', NULL, N'2021-05-07 01:49:22.663', N'50000')
+GO
+
 
 -- ----------------------------
 -- Table structure for HopAm
@@ -437,9 +464,6 @@ Làm con [G]tim ngô nghê như muốn khóc òa.
 [C]3 giờ đêm vẫn ngồi [Gm]cười.', N'[C]', NULL, N'2021-05-20 10:34:17.000', N'ten-hop-am-10')
 GO
 
-INSERT INTO [dbo].[HopAm] ([Id], [TenHopAm], [TenCaSi], [ChuoiHopAm], [Tone], [MaSheet], [Ngay], [Url]) VALUES (N'2021529174215797', N'TXT - Run Away ', NULL, N'Muộn rồi mà sao [Amaj7] còn. Nhìn [Am] lên trần nhà rồi quay ra. Lại [G#m] quay vào. Nằm [C#m] trằn trọc vậy đến sáng mai. Ôm tương [F#m]tư, nụ cười của ai đó.', N'[C#]', N'1532021184254', N'2021-05-29 17:42:15.217', N'txt-run-away-')
-GO
-
 INSERT INTO [dbo].[HopAm] ([Id], [TenHopAm], [TenCaSi], [ChuoiHopAm], [Tone], [MaSheet], [Ngay], [Url]) VALUES (N'11', N'Tên hợp âm 1', N'Ca Sĩ 1', N'Muộn rồi mà sao [Fmaj7]còn.
 Nhìn [Fm]lên trần nhà rồi quay ra.
 Lại [Em]quay vào.
@@ -464,6 +488,58 @@ Làm con [G]tim ngô nghê như muốn khóc òa.
 [Gm]đói nhưng vui quên luôn cồn cào.[Fmaj7]Nắm đôi tay kiêu sa.
 [Fm]Được một lần không ta.[Em]Nghĩ qua thôi con tim trong anh.đập [Am]tung lên rung nóc rung nhà.[Dm]Hóa ra yêu đơn phương một người.[G]Hóa ra khi tơ vương một người.
 [C]3 giờ đêm vẫn ngồi [Gm]cười.', N'[C]', NULL, N'2021-05-20 10:34:17.000', N'ten-hop-am-2')
+GO
+
+INSERT INTO [dbo].[HopAm] ([Id], [TenHopAm], [TenCaSi], [ChuoiHopAm], [Tone], [MaSheet], [Ngay], [Url]) VALUES (N'2021526141537532', N'Ayasa – The Reason Why Piano Sheet', NULL, N'Muộn rồi mà sao [Fmaj7]còn.
+Nhìn [Fm]lên trần nhà rồi quay ra.
+Lại [Em]quay vào.
+Nằm [Am]trằn trọc vậy đến sáng mai.
+Ôm tương [Dm]tư, nụ cười của ai đó.
+Làm con [G]tim ngô nghê như muốn khóc òa.
+[C]Vắt tay lên trên trán mơ mộng.Được [Gm]đứng bên em trong nắng xuân hồng.Một giờ [Fmaj7]sáng.Trôi [Fm]qua trôi nhanh kéo theo ưu phiền miên [Em]man.Âm thầm [Am]gieo tên em vẽ lên hi vọng.
+[Dm]Đúng là yêu thật rồi còn [G]không thì. hơi phí này cứ [C]thế loanh quanh loanh.quanh loanh quanh lật [Gm]qua lật lại (2 giờ).[Fmaj7]Những ngôi sao trên cao.[Fm]Là người bạn tâm giao. [Em]Lắng nghe anh luyên thuyên về.Một tình [Am]đầu đẹp tựa chiêm bao.[Dm]Có nghe thôi đã thấy ngọt ngào.Đủ [G]biết anh si mê em nhường nào.[C]Ít khi văn thơ anh dạt dào bụng.
+[Gm]đói nhưng vui quên luôn cồn cào.[Fmaj7]Nắm đôi tay kiêu sa.
+[Fm]Được một lần không ta.[Em]Nghĩ qua thôi con tim trong anh.đập [Am]tung lên rung nóc rung nhà.[Dm]Hóa ra yêu đơn phương một người.[G]Hóa ra khi tơ vương một người.
+[C]3 giờ đêm vẫn ngồi [Gm]cười.', N'[C]', N'1332021165438', N'2021-05-26 14:15:37.550', N'ayasa-the-reason-why-piano-')
+GO
+
+INSERT INTO [dbo].[HopAm] ([Id], [TenHopAm], [TenCaSi], [ChuoiHopAm], [Tone], [MaSheet], [Ngay], [Url]) VALUES (N'2021526141636926', N'Ayasa – The Reason Why Piano Sheet', NULL, N'Muộn rồi mà sao [Fmaj7]còn.
+Nhìn [Fm]lên trần nhà rồi quay ra.
+Lại [Em]quay vào.
+Nằm [Am]trằn trọc vậy đến sáng mai.
+Ôm tương [Dm]tư, nụ cười của ai đó.
+Làm con [G]tim ngô nghê như muốn khóc òa.
+[C]Vắt tay lên trên trán mơ mộng.Được [Gm]đứng bên em trong nắng xuân hồng.Một giờ [Fmaj7]sáng.Trôi [Fm]qua trôi nhanh kéo theo ưu phiền miên [Em]man.Âm thầm [Am]gieo tên em vẽ lên hi vọng.
+[Dm]Đúng là yêu thật rồi còn [G]không thì. hơi phí này cứ [C]thế loanh quanh loanh.quanh loanh quanh lật [Gm]qua lật lại (2 giờ).[Fmaj7]Những ngôi sao trên cao.[Fm]Là người bạn tâm giao. [Em]Lắng nghe anh luyên thuyên về.Một tình [Am]đầu đẹp tựa chiêm bao.[Dm]Có nghe thôi đã thấy ngọt ngào.Đủ [G]biết anh si mê em nhường nào.[C]Ít khi văn thơ anh dạt dào bụng.
+[Gm]đói nhưng vui quên luôn cồn cào.[Fmaj7]Nắm đôi tay kiêu sa.
+[Fm]Được một lần không ta.[Em]Nghĩ qua thôi con tim trong anh.đập [Am]tung lên rung nóc rung nhà.[Dm]Hóa ra yêu đơn phương một người.[G]Hóa ra khi tơ vương một người.
+[C]3 giờ đêm vẫn ngồi [Gm]cười.', N'[C]', N'1332021165438', N'2021-05-26 14:16:55.760', N'ayasa-the-reason-why-piano-')
+GO
+
+INSERT INTO [dbo].[HopAm] ([Id], [TenHopAm], [TenCaSi], [ChuoiHopAm], [Tone], [MaSheet], [Ngay], [Url]) VALUES (N'2021526142117798', N'Fukashigi no Carte', NULL, N'Muộn rồi mà sao [Fmaj7] còn.
+Nhìn [Fm] lên trần nhà rồi quay ra.
+Lại [Em] quay vào.
+Nằm [Am] trằn trọc vậy đến sáng mai.
+Ôm tương [Dm] tư, nụ cười của ai đó.
+Làm con [G] tim ngô nghê như muốn khóc òa.
+[C] Vắt tay lên trên trán mơ mộng.Được [Gm] đứng bên em trong nắng xuân hồng.Một giờ [Fmaj7]sáng. Trôi [Fm]qua trôi nhanh kéo theo ưu phiền miên [Em]man.Âm thầm [Am]gieo tên em vẽ lên hi vọng.
+[Dm]Đúng là yêu thật rồi còn [G]không thì. hơi phí này cứ [C]thế loanh quanh loanh.quanh loanh quanh lật [Gm]qua lật lại (2 giờ).[Fmaj7]Những ngôi sao trên cao.[Fm]Là người bạn tâm giao. [Em]Lắng nghe anh luyên thuyên về.Một tình [Am]đầu đẹp tựa chiêm bao.[Dm]Có nghe thôi đã thấy ngọt ngào.Đủ [G]biết anh si mê em nhường nào.[C]Ít khi văn thơ anh dạt dào bụng.
+[Gm]đói nhưng vui quên luôn cồn cào.[Fmaj7]Nắm đôi tay kiêu sa.
+[Fm]Được một lần không ta.[Em]Nghĩ qua thôi con tim trong anh.đập [Am]tung lên rung nóc rung nhà.[Dm]Hóa ra yêu đơn phương một người.[G]Hóa ra khi tơ vương một người.
+[C]3 giờ đêm vẫn ngồi [Gm]cười.', N'[D]', N'1132021104822', N'2021-05-26 14:21:17.440', N'fukashigi-no-carte')
+GO
+
+INSERT INTO [dbo].[HopAm] ([Id], [TenHopAm], [TenCaSi], [ChuoiHopAm], [Tone], [MaSheet], [Ngay], [Url]) VALUES (N'2021526142214745', N'Navy Blues (Includes Letters)', NULL, N'Muộn rồi mà sao [Fmaj7]còn.
+Nhìn [Fm]lên trần nhà rồi quay ra.
+Lại [Em]quay vào.
+Nằm [Am]trằn trọc vậy đến sáng mai.
+Ôm tương [Dm]tư, nụ cười của ai đó.
+Làm con [G]tim ngô nghê như muốn khóc òa.
+[C]Vắt tay lên trên trán mơ mộng.Được [Gm]đứng bên em trong nắng xuân hồng.Một giờ [Fmaj7]sáng.Trôi [Fm]qua trôi nhanh kéo theo ưu phiền miên [Em]man.Âm thầm [Am]gieo tên em vẽ lên hi vọng.
+[Dm]Đúng là yêu thật rồi còn [G]không thì. hơi phí này cứ [C]thế loanh quanh loanh.quanh loanh quanh lật [Gm]qua lật lại (2 giờ).[Fmaj7]Những ngôi sao trên cao.[Fm]Là người bạn tâm giao. [Em]Lắng nghe anh luyên thuyên về.Một tình [Am]đầu đẹp tựa chiêm bao.[Dm]Có nghe thôi đã thấy ngọt ngào.Đủ [G]biết anh si mê em nhường nào.[C]Ít khi văn thơ anh dạt dào bụng.
+[Gm]đói nhưng vui quên luôn cồn cào.[Fmaj7]Nắm đôi tay kiêu sa.
+[Fm]Được một lần không ta.[Em]Nghĩ qua thôi con tim trong anh.đập [Am]tung lên rung nóc rung nhà.[Dm]Hóa ra yêu đơn phương một người.[G]Hóa ra khi tơ vương một người.
+[C]3 giờ đêm vẫn ngồi [Gm]cười.', N'[F#]', N'11320213236', N'2021-05-26 14:22:14.297', N'navy-blues-includes-letters')
 GO
 
 INSERT INTO [dbo].[HopAm] ([Id], [TenHopAm], [TenCaSi], [ChuoiHopAm], [Tone], [MaSheet], [Ngay], [Url]) VALUES (N'3', N'Tên hợp âm 3', N'Ca Sĩ 1', N'Muộn rồi mà sao [Fmaj7]còn.
@@ -693,6 +769,18 @@ GO
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'10420219538', N'truongvananh69@gmail.com', N'AF9CB95257F53BC10CAD6F3C804301D8', NULL, N'Vân Anh', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'205491', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'vananh')
 GO
 
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'105202102451', N'vy_whiteswan@yahoo.com.vn', N'6EF93C344519193D0374C3E40DC5BC78', NULL, N'Mi', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'729548', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'mi')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1052021182135', N'thaohien0103@gmail.com', N'D084488A622ADC1D81869A2F524E17BC', NULL, N'hiendang', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'536244', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'hiendang')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'105202121044', N'luuminhphuong9A3@gmail.com', N'356DD430C7BD83639C8C4CB1D9454D60', NULL, N'Phương', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'751459', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'phuong65')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'105202135439', N'tugookuxanhlsv@gmail.com', N'0D9F9DBE8A41016F23DA842D6FA8EDF0', NULL, N'ANHTUHALIEN', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'200623', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'anhtuhalien')
+GO
+
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1132021185838', N'hoangdao262@gmail.com', N'CB8737AA702F52311809151D82AA2E0E', NULL, N'hoangdao', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'632460', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'hoangdao')
 GO
 
@@ -741,6 +829,9 @@ GO
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'11420219657', N'ngocvy.gabriela396@gmail.com', N'BD7BD6B8D8D74C1A771159C8D9DA9F32', NULL, N'gaby123', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'842482', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'gaby123')
 GO
 
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'115202184440', N'magiauy46@gmail.com', N'D3D0F20F6B0BA068C08E985016099876', NULL, N'magiauy', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'442000', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'magiauy')
+GO
+
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'123202111440', N'Suneelxvr@gmail.com', N'E17D1151CD4818BA88AB92FA19026F0B', NULL, N'Suneel', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'850170', N'0', N'.00', N'0', NULL, NULL, NULL, NULL, NULL, NULL, N'suneel')
 GO
 
@@ -771,6 +862,9 @@ GO
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'12420219432', N'pt715845@gmail.com', N'4C3D91CF0DB685EE882DB7E61845CE93', NULL, N'Thanh Phương', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'562802', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'thanhphuong')
 GO
 
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'12520217128', N'camelly1594@gmail.com', N'79573FEAD42107757571FC8AA758AD10', NULL, N'camelly1594', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'266379', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'camelly1594')
+GO
+
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'132021204749', N'bang12a12a1@gmail.com', N'A241192C90F12134700473A0C64D0BEA', N'John Pham', N'bang12a12a1', N'1', NULL, N'category-banner-img.jpg', N'icon_anhdaidien.png', NULL, N'545734', N'220000', N'10.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'bang12a12a')
 GO
 
@@ -798,6 +892,9 @@ GO
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'13420214273', N'misadalat2018@gmail.com', N'24FB219617F65F1964228009C155052C', NULL, N'xanhatminhtu2004', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'101084', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'xanhatminhtu2004')
 GO
 
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1352021202727', N'quan3u@gmail.com', N'DFA91C1AFBCC8D5AE995F6065E01C163', NULL, N'Katie', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'121574', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'katie')
+GO
+
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'143202102944', N'ravelkjh@gmail.com', N'015DB64D27E3EA457B62C31FA0259EDA', NULL, N'jinhyun', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'985187', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'jinhyun')
 GO
 
@@ -814,6 +911,39 @@ INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap],
 GO
 
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'14420216497', N'phunglamsxd@gmail.com', N'E3564BFD4A52E9F8B904C5F156240B5E', NULL, N'lamphung', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'357049', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'lamphung')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1452021101830', N'phuonganhtovo@gmail.com', N'83894866C66E20A06ADA61BE824428E6', NULL, N'Tovophuonganh', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'860396', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'tovophuonganh')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'145202110220', N'ngocmainb.92@gmail.com', N'4FE7654EC7F55FF6F476F62F0102FA54', NULL, N'Ngocmai', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'837578', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'ngocmai')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1452021181836', N'phuongboulevard@gmail.com', N'0F83D730C0DA1035A5A5156BE1437E34', NULL, N'  phuongboulevard@gmail.com ', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'996494', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'phuongboulevardgmailcom')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1452021183459', N'phamhuynhan1904@gmail.com', N'F9738254097FED1F89A74A126AE345D8', NULL, N'phamhuynhanvipprogalaxy123', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'720625', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'phamhuynhanvipprogalaxy123')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1452021204958', N'thaihoa160201@gmail.com', N'52163399689202FFEF9661C0F301222A', NULL, N'Thaihoa162', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'249720', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'thaihoa162')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1452021215158', N'chinguyen12121995@gmail.com', N'6D2B4993025E6C994E79551C6333A8DE', NULL, N'Chi Nguyen', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'288718', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'chinguyen')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1452021215914', N'ngoc60507@gmail.com', N'0A7FC79C4739E3C9EE3A493F6D8E2A97', NULL, N'Lu', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'101959', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'lu')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'14520212312', N'minhtam9743@gmail.com', N'EFCD3749918D74F7AA33427DD3E05578', NULL, N'Janeju1511', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'981985', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'janeju1511')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'14520212446', N'zzminhzz123@gmail.com', N'E8C30F6D46DF5DA2D74727BC4C78C23E', NULL, N'minhpham', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'754944', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'minhpham')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'145202154420', N'iampuuminhanh@gmail.com', N'BE21AEA5ECFD6C13CD3A016EA69558AD', NULL, N'manhjuu', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'995170', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'manhjuu')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'145202185142', N'sayai007@yahoo.com.vn', N'B3F947379E88AAB49C26F395AA0EBAEE', NULL, N'sayai007', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'297759', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'sayai007')
 GO
 
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1532021242', N'eft51285@zwoho.com', N'4EF59454FCD91A0549E360AFEFC5A6D6', NULL, N'Musescore', N'1', NULL, N'category-banner-img.jpg', N'Bình Dương Sơn1.jpg', NULL, N'152935', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'musescore')
@@ -834,6 +964,30 @@ GO
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'154202155128', N'vinhphuoc14399@gmail.com', N'57E37DBEF9F3F8741B464C2F67BB3DD8', NULL, N'vinhphuoc14399', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'988572', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'vinhphuoc14399')
 GO
 
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1552021164848', N'huutran70@gmail.com', N'AA00A45AEB858A45E98CD97F32A0317A', NULL, N'huutran70', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'612902', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'huutran70')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1552021191828', N'anhkhoi_00@yahoo.com.vn', N'DAA0F2F0CC1552ECAE43DDDF6F805E37', NULL, N'buoibuoi', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'243647', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'buoibuoi')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1552021211426', N'trangkeyboard12@gmail.com', N'D66BCC5B57E3E2EC3A89D6370121A4E8', NULL, N'Tracykey', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'530436', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'tracykey')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'155202121559', N'nguyetlinh091@gmail.com', N'7001563854616E19337CC592DD042011', NULL, N'Nguyet Linh', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'875297', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'nguyetlinh')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'155202123015', N'notnps23@gmail.com', N'E26B59FE71DD0F11A32991B51B74E829', NULL, N'Nps23', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'256895', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'nps23')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'15520213720', N'ptson.cfc@gmail.com', N'D23EE90F9AF3270628399E4FBF11D8BC', NULL, N'Tommy100214', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'605859', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'tommy100214')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'155202164053', N'hoangkhuong1997@gmail.com', N'8AC0D7DF9B41E16F0C5C6C1727CFBE2F', NULL, N'hoangkhuong1997', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'424265', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'hoangkhuong1997')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'155202174947', N'duyenlh723@gmail.com', N'C21BBE501F55E124FE86936DC596AE84', NULL, N'duyenlh723', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'826875', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'duyenlh723')
+GO
+
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1632021185354', N'becknguyen26@gmail.com', N'08D64BAA455D475A22E3BD2EA3D6E96B', NULL, N'Khamho', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'962530', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'khamho')
 GO
 
@@ -850,6 +1004,36 @@ INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap],
 GO
 
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'163202161721', N'khoanmtk@gmail.com', N'5617DC9F6B2C09D954CF4D794F32BD31', NULL, N'khoanmtk', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'132395', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'khoanmtk')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'165202119118', N'phamhuyenvy@gmail.com', N'00A7D88E084333B5A59212892F9516DA', NULL, N'Vivi Pham', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'460592', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'vivipham')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1652021201755', N'nvan17746@gmaul.com', N'F26F05D60910DF2BFBCDACA18693BB13', NULL, N'daotrongduy', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'272715', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'daotrongduy')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1652021225936', N'vietit87@yahoo.com', N'B24331B1A138CDE62AA1F679164FC62F', NULL, N'Tran Van A', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'649778', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'tranvana')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1652021234120', N'maithanh16117@gmail.com', N'276D52E60F09DE95F3DE2A588B7BE0B1', NULL, N'Quangminhqqq', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'556378', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'quangminhqqq')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'165202132729', N'nguyenchesapa@gmail.com', N'AE7058571AE6A577C779AAAA2A4284B3', NULL, N'Hocpiano', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'404287', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'hocpiano')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'16520214484', N'quanghuy240396@gmail.com', N'21B87C1901CA94554899ADE921873366', NULL, N'Huy123456', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'100450', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'huy123456')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'165202162619', N'phuongtlh20@uef.edu.vn', N'91A945D484B1ACC347F7095650DB67AE', NULL, N'Kun', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'210670', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'kun')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'165202181631', N'cityle236@gmail.com', N'70C9ECBD2512460FA861DE25FB3D7C6E', NULL, N'Hienle', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'386072', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'hienle')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'165202185625', N'tuthan4vien@gmail.com', N'27253221A516B520F2780D0E0A2EE33B', NULL, N'dat123coi', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'599403', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'dat123coi')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'165202193026', N'trinhhuuhai@yahoo.com', N'D4A36924BBD2A430BE20ED997BCD7E54', NULL, N'THH', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'163419', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'thh')
 GO
 
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'173202112315', N'silversunshinexv@gmail.com', N'6A1FAAC8ABD59A51BE5E34BE32C89F4E', NULL, N'sunshine', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'719445', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'sunshine')
@@ -948,6 +1132,30 @@ GO
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'174202181659', N'kimurayen13@gmail.com', N'7A07D79507580A8C6EE07CB217BF9A6B', NULL, N'Kimurayen13', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'880000', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'kimurayen13')
 GO
 
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'175202111821', N'thuhuyenbvrhm@gmail.com', N'638E95D134011770266D5B9BE7C391C5', NULL, N'Huyenxu', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'479301', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'huyenxu')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'175202119141', N'linh241105@gmail.com', N'C5A8D9E4AE4B85DC69F88D652440E4FA', NULL, N'Linh2411', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'423376', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'linh2411')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1752021205925', N'quynhto.ty93@gmail.com', N'0388373EBE2C6FBC1D577F5BBCF8A05F', NULL, N'Quynhtnt', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'763109', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'quynhtnt')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1752021211326', N'tranthuyduong2910@gmail.com', N'5655EC4FACD44E6F58745973F82521DB', NULL, N'rei.vince', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'365571', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'reivince')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1752021223151', N'Mtran828@gmail.com', N'A93A3E7FCFF697475CC8D1017EAC0E95', NULL, N'Julianna', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'338439', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'julianna')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1752021223856', N'hngocanh1505@gmail.com', N'17BCE1FA2DFE3764B9C9B2E65E7EF760', NULL, N'Ngọc Anh', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'104276', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'ngocanh')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'175202122635', N'PhanTr.BaoAn@gmail.com', N'FFA531D679BF3310E977C79CD9C6752C', NULL, N'Phan Tr.Bảo An', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'491422', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'phantrbaoan')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'175202123139', N'ynhi30k@gmail.com', N'2BB97A35EB65FE6476D34C9894EBEA17', NULL, N'Nhi____i', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'926343', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'nhii')
+GO
+
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1832021103237', N'doandinhtai2901@gmail.com', N'6324FCF72CE1CB384B5F97682314F596', NULL, N'Dinh tai', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'942254', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'dinhtai')
 GO
 
@@ -990,6 +1198,39 @@ GO
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'18320219394', N'crystalnguyen242@gmail.com', N'D059EC86D9F4A54FFE3AC4AB77BA1B46', NULL, N'Quyenng', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'558395', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'quyenng')
 GO
 
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'185202104340', N'kensoi20102011@gmail.com', N'A92F835BEE942332D7527DEE344FC725', NULL, N'Buiducminhdang3a5 ', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'992374', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'buiducminhdang3a5')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1852021193833', N'irisss.vip@gmail.com', N'F13EBA8F28FB290B0AA8110F75FDA022', NULL, N'hoangchien19988', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'149062', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'hoangchien19988')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1852021193927', N'dorothypham220695@gmail.com', N'4B3D1DADE2C95BE31A7B11AF21F77D2A', NULL, N'Anh Pham', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'573789', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'anhpham')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1852021212458', N'trilecbvn2006@gmail.com', N'8D6FA725E7A5A29417A27482C50316EC', NULL, N'Lê Trí', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'591460', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'letri')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1852021214934', N'hahalley@me.com', N'1C63129AE9DB9C60C3E8AA94D3E00495', NULL, N'Ha Lam', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'905827', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'halam')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1852021221227', N'ttthanh154@gmail.com', N'A6317BBD52925103B7394E79B474FE06', NULL, N'ttthanh154', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'192314', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'ttthanh154')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'185202123103', N'Nguyenanhtuan1987@gmail.com', N'B37D28B7B5D965B23991CBD081DAE5E2', NULL, N'Anh Tuan', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'945434', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'anhtuan')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'185202123115', N'khanhkhanhdg@gmail.con', N'FC4782CAFE94B30A462E48E82991536B', NULL, N'Khanh Duong', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'514617', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'khanhduong')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'185202125815', N'dangnghia2112@gmail.com', N'CB4888DE07D571F08F06D9DC51C71928', NULL, N'dangnghia2112', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'122914', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'dangnghia2112')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'18520217654', N'cakhongduoi.photos.2021@gmail.com', N'78C20E976DA26892BCB90F7C1674AA09', NULL, N'cakhongduoi', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'863259', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'cakhongduoi')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'185202182325', N'chang.hh13@gmail.com', N'A507AE133EF3556A5BEA12B687B6852B', NULL, N'Tranggg20', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'713320', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'tranggg20')
+GO
+
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1932021024', N'taichinhcongnhom@gmail.com', N'844214C2EBC6E6C27A0ADAB3D62D3E0C', NULL, N'chickens2socola', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'415969', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'chickens2socola')
 GO
 
@@ -1026,7 +1267,16 @@ GO
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1942021082', N'bui.khanh.huong@gmail.com', N'CE93EE4E726ED44B1CDE7029CB79B318', NULL, N'bkhuong105', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'196716', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'bkhuong105')
 GO
 
-INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'202142205947991', N'bang12a12a@gmail.com', N'2F5FE5A7EAAFC615FA635D23FF49975B', N'Bằng Phạm', N'bang12a12a', N'1', NULL, N'EAAB2ssSohZBYBACSFj3efVYobb5X41EgeQwnZA1iBfjrw7TutChGMuE5ci7d3DZBwZCoKTo3sQPjRFa4513sCwpg0a2MiOVtZAT1AC4gQptkKzqhke3n7o9JHZBiknbIajCinn9CnbdwvVNcHn5Ha0sZC6AGDzCoWJzYWPUuTfS9QZDZD', N'anh-title.png', NULL, NULL, N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'bang12a12a')
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'195202102811', N'ngmanhluan01@gmail.com', N'D08CEA7885CC17897C137125BE5BC0D0', NULL, N'manhluan', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'621043', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'manhluan')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'1952021201718', N'temujinej@gmail.com', N'CDF2AE1D3DBBC002555F4C8E6ED606BB', NULL, N'temujinrb', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'667566', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'temujinrb')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'195202123517', N'khanhitg@yahoo.com', N'8715F339A23234407F5ECA7C0FAA6317', NULL, N'khanhitg', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'130880', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'khanhitg')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'202142205947991', N'bang12a12a@gmail.com', N'A241192C90F12134700473A0C64D0BEA', N'Bằng Phạm', N'bang12a12a', N'1', NULL, N'EAAB2ssSohZBYBACSFj3efVYobb5X41EgeQwnZA1iBfjrw7TutChGMuE5ci7d3DZBwZCoKTo3sQPjRFa4513sCwpg0a2MiOVtZAT1AC4gQptkKzqhke3n7o9JHZBiknbIajCinn9CnbdwvVNcHn5Ha0sZC6AGDzCoWJzYWPUuTfS9QZDZD', N'anh-title.png', NULL, NULL, N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'bang12a12a')
 GO
 
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'203202113451', N'lee@spybox.de', N'009AD49B7E3650DE57FE77E6315A9E00', NULL, N'lee', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'121267', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'lee')
@@ -1053,6 +1303,30 @@ GO
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'20320218622', N'linhlinh.vu132@gmail.com', N'7AD8FF6CEC307568FCB7066DCEA74E31', NULL, N'linhlinhvu', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'703854', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'linhlinhvu')
 GO
 
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'205202111230', N'hamydang2008@gmail.com', N'6568F991A49463B8638CF1E00F2DDEAB', NULL, N'hamy15112008', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'624601', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'hamy15112008')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'205202111748', N'thanhthuy7783@gmail.com', N'3A503AA56D1D8607FA7B1E1CC364A576', NULL, N'thuythuy', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'592399', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'thuythuy')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'205202115514', N'danada2k02@gmail.com', N'D168441B1324321CE659FFCA9EA2A128', NULL, N'dannguyen', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'782809', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'dannguyen')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'2052021183346', N'phat.duongthuan@gmail.com', N'7DEBAC4224B73CC3CEBBFF5BCF619242', NULL, N'patrick', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'930982', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'patrick')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'2052021185213', N'huyphalehn@gmail.com', N'06B5DA0BFAC80C420F203E39E69200EF', NULL, N'huydeptrai', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'997252', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'huydeptrai')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'2052021222111', N'hnga0605@gmail.com', N'F5CE6DEF036568AA7BE7546DD73BC0D9', NULL, N'Nga', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'580520', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'nga')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'205202122405', N'minhtam1802@gmail.com', N'DF21F4BE0E22832CEFFEAAC775602BDF', NULL, N'bctiny', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'134820', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'bctiny')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'20520216529', N'maianh1412207@yahoo.com.vn', N'276E3BA69D558A6EE4E1A577E90B61CE', NULL, N'maianh', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'926114', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'maianh')
+GO
+
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'2132021099', N'vic@smartqsys.com', N'00D3A10443ECFDFCBA2612B3D53D3BB5', NULL, N'de la Rosa', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'173265', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'delarosa')
 GO
 
@@ -1068,6 +1342,24 @@ GO
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'213202193328', N'lupu_de_balta@yahoo.com', N'593CFC665A4C48076F5D96B02CF9D808', NULL, N'lambdadelta1', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'752251', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'lambdadelta1')
 GO
 
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'215202104311', N'quangvupp321@gmail.com', N'0FFA5DA5434ADB3410BE5C9453D91529', NULL, N'quangvupp321', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'861853', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'quangvupp321')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'215202112250', N'ijerry.vu@gmail.com', N'4681642CE5A2EF58EE172F595AE58022', NULL, N'jerrythi', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'814970', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'jerrythi')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'215202115057', N'minhphuong777@gmail.com', N'DFCA9B39847D578EBDD794C7CEF78BD3', NULL, N'nnnn', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'946579', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'nnnn')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'215202121655', N'thunga_cattie@yahoo.com', N'836BE0BBAE5DAEE34746823DE4FDC04C', NULL, N'Kate Nga', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'797801', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'katenga')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'215202123219', N'hue.nguyenlenhu@gmail.com', N'DC92DE2A5EBD5C10CBCD27E3E273A136', NULL, N'hue', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'189057', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'hue')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'215202174930', N'minhsang@gmail.com', N'C02F0F3ADC8034ECA05E26798E819937', NULL, N'thuduc2007', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'786666', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'thuduc2007')
+GO
+
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'22320210436', N'Nhu1416409@gmail.com', N'E6CC8147171BB34BE975E92A045C6CF0', NULL, N'Nhu1416409', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'300408', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'nhu1416409')
 GO
 
@@ -1077,13 +1369,40 @@ GO
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'2232021103541', N'phamthaibao040@gmail.com', N'486BD85D0426729F27C8BBE3AD5925EE', NULL, N'bảo2103', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'147441', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'bao2103')
 GO
 
-INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'223202121186', N'halinh061108@gmail.com', N'E6D15A34F6DA9EB1EB2B4AE0F5509CB6', NULL, N'Nguyễn Hà Linh', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'840698', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'nguyenhalinh')
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'223202121186', N'halinh061108@gmail.com', N'D6F9D856A768812E3CF3E5A9D35C12AF', NULL, N'Nguyễn Hà Linh', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'840698', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'nguyenhalinh')
 GO
 
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'223202165434', N'oanhdd271076@gmail.com', N'9C5636C16F4E8B0197A83C52EA03EFF2', NULL, N'minhhienn', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'515533', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'minhhienn')
 GO
 
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'225202110171', N'wangyibo1135@gmail.com', N'FD06DD118AC51E4F9530C84C81F40C24', NULL, N'OenOen', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'606951', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'oenoen')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'2252021201659', N'tranhailien19022007@gmail.com', N'C3E49EB1A1217F218AC8CFF8736F5735', NULL, N'lien', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'911178', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'lien')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'2252021211857', N'proachow1@gmail.com', N'FFF4EA765C841C238FBCFAA7C0376A30', NULL, N'proachow', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'796109', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'proachow')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'2252021222938', N'khoitrn12@gmail.com', N'4862F313C82B92D61BFFFB7148B34E9E', NULL, N'khoitrn12@gmail.com', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'352095', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'khoitrn12gmailcom')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'22520216225', N'buingocanh.tb215@gmail.com', N'74C0F78E917775BE002C8E71EEC1F80B', NULL, N'Anh Bui', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'420172', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'anhbui')
+GO
+
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'233202195157', N'lehoamy2003@gmail.com', N'7EC27DA1D1065B4F3DA00521EC7E9ACC', NULL, N'Ken Pi Lê', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'529646', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'kenpile')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'235202114436', N'ngongoc1293@gmail.com', N'64B2F5404B02E4EB8B452F2449524278', NULL, N'ngongoc1293', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'513407', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'ngongoc1293')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'235202123359', N'contact.huydung@gmail.com', N'89D3D2A10ABCF8D3845A4EB4D53BB8FB', NULL, N'huydung', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'507364', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'huydung')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'23520212460', N'thuytramnguyenngoc1707@gmail.com', N'9CC444E2F091137F0E0B0B34D0EDFA77', NULL, N'thuytram', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'466589', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'thuytram')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'235202165243', N'rubikpro0909@gmail.com', N'19570CA7B03FCBF4AEC542E833BD9C2B', NULL, N'Tường', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'804317', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'tuong')
 GO
 
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'243202110455', N'daniellewoodruff30@gmail.com', N'4EF59454FCD91A0549E360AFEFC5A6D6', NULL, N'anime45', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'365348', N'0', N'.00', N'0', NULL, NULL, NULL, NULL, NULL, NULL, N'anime45')
@@ -1095,28 +1414,196 @@ GO
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'24320218120', N'vonhatminh2706@gmail.com', N'D80966EF5D31FFD69A9127016CE241CB', NULL, N'sunny_minhvo', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'608976', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'sunnyminhvo')
 GO
 
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'2452021104814', N'thao01679971170@gmail.com', N'523C12C09A20DC075A562B2B6F23AF18', NULL, N'thao123', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'910429', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'thao123')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'245202115628', N'phamthaonobi@gmail.com', N'86E2813E73950FDF2B5BEE215AE4ACF1', NULL, N'phuong thao', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'730456', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'phuongthao')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'2452021183958', N'nbthuy911@gmail.com', N'7612C996C14F0A9FE1B3335E444D20AC', NULL, N'Thuy', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'884022', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'thuy')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'2452021223218', N'tanhoai051297@gmail.com', N'D7862961744C6CDA051E30ED322CB73C', NULL, N'hoai97', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'597201', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'hoai97')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'24520217617', N'bnhana2705@gmail.com', N'32C68211ABA1451B9B1A1737B9CE72A3', NULL, N'Hanabuinguyem', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'832266', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'hanabuinguyem')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'252021123832', N'ynvyphan1802@gmail.com', N'3AA8920A5247B055EB751520DB26B4B1', NULL, N'_ynviee.p', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'896021', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'ynvieep')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'252021142644', N'nguyenphamdangkhoa11@gmail.com', N'BE724E8AA2659BFC1CA01F71E951287D', NULL, N'khoa', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'313158', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'khoa')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'25202120049', N'phoanhngo1997@gmail.com', N'836901E1031C5FE452DD767A3CD5EF20', NULL, N'Phanhphanh97', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'502395', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'phanhphanh97')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'25202120243', N'dugkiet@gmail.com', N'47E8BB33087D4960EB9E117912D2E1EF', NULL, N'dugkiet', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'128729', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'dugkiet')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'252021205437', N'Ngiakhue0811@gmail.com', N'4E95AD5DF79FD0A066C315CC842075FC', NULL, N'KHUEHARRY', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'293644', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'khueharry')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'252021205513', N'tyole0996@gmail.com', N'6F2B1921617D53E38A47D08CA7C811F6', NULL, N'tyole0996', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'401130', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'tyole0996')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'252021211714', N'ngoc046878@stu.vinschool.edu.vn', N'0516C653DF64C98DEB837A00928D20FA', NULL, N'thngoc', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'467187', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'thngoc')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'252021212547', N'thinlebinh@gmail.com', N'58373D1EB65A3E4C8CD0AF2B34CC3EAE', NULL, N'kunskyqc123', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'503215', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'kunskyqc123')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'252021213648', N'minhcong1121@gmail.com', N'266FBB4D2A55249037AD2A2B4C93D314', NULL, N'minhcong1121', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'848368', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'minhcong1121')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'25202121931', N'internationalfeeder98@gmail.com', N'377649E15152532F0BD838D2CEB7FC90', NULL, N'AndrewNguyen', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'905821', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'andrewnguyen')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'25202151829', N'nmhung.7676@gmail.com', N'7B14AD7DF8A75AC96BC8188D5B752B36', NULL, N'minhu', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'975340', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'minhu')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'25202155947', N'poulsu2005@gmail.com', N'D3EB1C0251627679CCE3FF46E391FC12', NULL, N'huyminh2005', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'556740', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'huyminh2005')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'25202161927', N'phucphuc2000@gmail.com', N'56B34DAEE234EACD1D45FB2FB8E7FF15', NULL, N'phucphuc2000', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'361925', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'phucphuc2000')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'25202162016', N'nhatchatter@gmail.com', N'325A2CC052914CEEB8C19016C091D2AC', NULL, N'Nhatchatter', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'171176', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'nhatchatter')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'25202162759', N'anhtram.9a2.dt@gmail.com', N'0A2E1C78B63502BC28F34B404E8C5328', NULL, N'anhtram55', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'225188', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'anhtram55')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'25202163656', N'ohitsclaireee@gmail.com', N'361EC4920E864E5AEA54629DB46571A5', NULL, N'Ee', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'259583', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'ee')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'25202172347', N'dwzclone@gmail.com', N'8F567ABDC9056A4D27D028407BC702FA', NULL, N'dwzclone', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'266331', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'dwzclone')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'25202174324', N'nguyenchuviettien@yahoo.com', N'EC5549A807769C02D6CCFBEC4FD7CBEB', NULL, N'nguyentien2310', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'767299', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'nguyentien2310')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'25202181113', N'ncpv2911@gmail.com', N'DC51ECD8A5A4C57D4638C69C34A67F46', NULL, N'Vinh2911', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'390275', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'vinh2911')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'25202183841', N'luongunt@gmail.com', N'797F840CCB04173E3E800805E63B3046', NULL, N'luongv123', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'592100', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'luongv123')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'2520218533', N'huyenmadgir@gmail.com', N'267C151FF65ABDD680338353081B9682', NULL, N'khoi123', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'164086', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'khoi123')
+GO
+
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'253202118336', N'haithichihoa@gmail.com', N'97B046F03A4828E6971A1BD7847262F5', NULL, N'Hmeo.142', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'882578', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'hmeo142')
 GO
 
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'2532021205745', N'daicute1999@gmail.com', N'C42173FD53D01E6D7A06EEAE39AD6F9A', NULL, N'TRẦN QUANG ĐẠI', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'928498', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'tranquangdai')
 GO
 
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'25520215390', N'manhnguyen862006@gmail.com', N'E0DC1568C660E95ABAF5DB378B4E7EF7', NULL, N'manh', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'984550', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'manh')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'255202174430', N'ngkhmy2604@gmail.com', N'89AAE74AB2E157077D87164153E2828A', NULL, N'khmyy', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'237401', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'khmyy')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'255202191915', N'thuanbv2203@gmail.com', N'FE3D2EE38924668D41F870727395B563', NULL, N'laizk', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'637343', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'laizk')
+GO
+
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'2632021171053', N'melmiddy42@gmail.com', N'647318905F4E1557AC2AD3C5657D7A40', NULL, N'melmitch42', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'225158', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'melmitch42')
 GO
 
-INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'2652021232927', N'bang123@gmail.com', N'A241192C90F12134700473A0C64D0BEA', NULL, N'bangdaica', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'476685', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'bangdaica')
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'2652021112151', N'boy.ku145@gmail.com', N'AEF94A9067F3082E6C801A373799405B', NULL, N'itzcookie', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'631738', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'itzcookie')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'2652021164113', N'gemstoan@gmail.com', N'88C0AC2EF3A76800F31EE3129BE3D74E', NULL, N'gemstoan', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'612362', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'gemstoan')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'265202122723', N'phmhanh1201@gmail.com', N'7534C150E6C5F00B4437120D40C37D86', NULL, N'Hạnh', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'346663', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'hanh')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'26520213026', N'truongquangtue@gmail.com', N'04DDE9F462255FE14B5160BBF2ACFFE8', NULL, N'tue', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'319213', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'tue')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'26520214616', N'naquoc.dn@gmail.com', N'1733C6AF78168F7DC2BE1D495C566D16', NULL, N'Rop_Playz', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'696839', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'ropplayz')
 GO
 
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'27320212512', N'Hoangthaoa3ltt@gmail.com', N'28C86A2D6A3DC31D68022255F903101B', NULL, N'Hoangthaoa3ltt', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'728017', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'hoangthaoa3ltt')
 GO
 
-INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'282202175714', N'anime@gmail.com', N'A241192C90F12134700473A0C64D0BEA', N'anime', N'anime', N'1', NULL, N'category-banner-img.jpg', N'242185eaef43192fc3f9646932fe3b46.jpg', NULL, N'436464', N'3440000', NULL, N'1', N'https://www.youtube.com/', N'https://www.facebook.com/', NULL, NULL, NULL, NULL, N'anime')
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'282202175714', N'phonggioday@gmail.com', N'4EF59454FCD91A0549E360AFEFC5A6D6', N'Pianist Sheet ', N'anime', N'1', NULL, N'category-banner-img.jpg', N'images.jpg', NULL, N'436464', N'3540000', NULL, N'1', N'https://www.youtube.com/channel/UCTk5sUUCsPvpozVRluXHXqQ', NULL, NULL, NULL, NULL, NULL, N'anime')
 GO
 
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'282202183342', N'admin@epianosheet.com', N'4EF59454FCD91A0549E360AFEFC5A6D6', NULL, N'JohPiano', N'1', NULL, N'category-banner-img.jpg', N'120183155_392408208593208_1308841960982519622_n.png', NULL, N'529404', N'192000', N'8.70', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'johpiano')
 GO
 
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'282202191830', N'igo14207@cuoly.com', N'4EF59454FCD91A0549E360AFEFC5A6D6', NULL, N'KevinTran99', N'1', NULL, N'category-banner-img.jpg', N'Thiết kế không tên.png', NULL, N'379461', N'128000', NULL, N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'kevintran99')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'284202124552', N'josnpl@gmail.com', N'4D0310B9CB0413B8D64F56E7F5BD385A', N'NPL', N'hocnhacdeom', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', N'Sheet piano chất lượng rất cao và có video để tập theo!', N'852329', N'0', N'.00', N'1', N'https://www.youtube.com/channel/UCnofS97t1P_1HJWrNmCSh3g', NULL, NULL, NULL, NULL, NULL, N'hocnhacdeom')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'35202102049', N'hoangtubian456@gmail.com', N'20C353D3D219C80CC29927416F85FCFA', NULL, N'hoang anh', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'607974', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'hoanganh')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'35202103042', N'quyen021421@stu.vinschool.edu.vn', N'F00FC03A806553AB2C1887793621554D', NULL, N'quyen', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'346671', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'quyen')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'35202111959', N'maxhunk94@gmail.com', N'7599B8CB455F5764D3888F5A5CAC041A', NULL, N'maxhunk94', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'969673', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'maxhunk94')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'35202115310', N'chanhkhang301107@gmail.com', N'6ACFDEC5E1EF56F5ED09CD807BF793AD', NULL, N'acckhach3336', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'611531', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'acckhach3336')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'35202116313', N'emilynrox24@gmail.com', N'651C0FF0B441617E933DBE203B680433', NULL, N'Emily', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'579719', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'emily')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'352021174330', N'Duchoang4646@gmail.com', N'939B12A13533CA2C8857CD118D058E71', NULL, N'DucHoang', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'887907', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'duchoang')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'35202119851', N'phuongthy008@gmail.com', N'B8E2FBF3E9EC11D313392918227F3C27', NULL, N'phuongthy', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'742807', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'phuongthy')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'352021204622', N'anhidon2312@gmail.com', N'978CF21D145A23F79FD1ECF07AA1ED65', NULL, N'hanleXXX#3', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'207615', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'hanlexxx3')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'352021204842', N'hungdo0811@gmail.com', N'5E378D83C38F4E05D943A785825D24A7', NULL, N'Hung', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'342898', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'hung')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'352021212713', N'k06112233@gmail.com', N'482B1D235A0B439C2ECDEA1117F4B42A', NULL, N'Kpear', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'416793', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'kpear')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'352021214335', N'albertkhang2017@gmail.com', N'2EB47CE8BB6E2E62F92EA17D150A40E9', NULL, N'albertkhang', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'335216', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'albertkhang')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'35202123238', N'quangminh6305@gmail.com', N'276D52E60F09DE95F3DE2A588B7BE0B1', NULL, N'quangminh', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'788236', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'quangminh')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'35202145830', N'zhanggiahan0811@gmail.cpm', N'F4348CC178B6ABE93217AAF2EDA71EFA', NULL, N'za hân', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'365954', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'zahan')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'35202151427', N'minhtiennguyen461@gmail.com', N'11BAFD0DF0AC768C0A3BF8DEF6601B1B', NULL, N'Gbb', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'853304', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'gbb')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'35202163229', N'merry.vo2603@gmail.com', N'483A459B6429572292CBDCEAECC85E7B', NULL, N'Rika', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'916491', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'rika')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'3520216398', N'orangevinh@gmail.com', N'AA4F9109E34F91CB982AACB4D8BEEBE2', NULL, N'yuki', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'794075', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'yuki')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'35202171731', N'doannnhatquang@gmail.com', N'7662B8D31449ABAEFB9E6854B2AF94BA', NULL, N'doannhatquang', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'195537', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'doannhatquang')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'35202181053', N'tungvip0207@gmail.com', N'D29D8BD31B9929B9F6F2CA511E5D0F1B', NULL, N'TSTShin', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'887482', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'tstshin')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'35202183629', N'michelle.pham.mp19@gmailcom', N'FAF07C6C2CA78B209878325BAE0176B5', NULL, N'mpham19', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'721711', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'mpham19')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'3520218531', N'nguyenduchiep1234567@gmail.com', N'D7D5420D338ED8E71BF6D769DEE8E2A8', NULL, N'Tom Wayne', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'432839', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'tomwayne')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'35202194345', N'huynhroberto112153@gmail.com', N'86ECF6C79EA756E31C87C5A2019C828F', NULL, N'Votranhuynh', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'605819', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'votranhuynh')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'35202194736', N'phamthucvi278@gmail.com', N'BD1A674E7F7871F7679933EE5D703EF6', NULL, N'Thục Vi', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'238811', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'thucvi')
 GO
 
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'442021224120', N'nov91856@eoopy.com', N'4EF59454FCD91A0549E360AFEFC5A6D6', NULL, N'phong', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'757542', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'phong34')
@@ -1137,19 +1624,154 @@ GO
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'442021233525', N'phonggioday1@gmail.com', N'4EF59454FCD91A0549E360AFEFC5A6D6', NULL, N'phong1', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'884660', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'phong1')
 GO
 
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'452021114542', N'lukhanhtrang06092002@gmail.com', N'CB6BA2E588DE98E88CCDE22F14B2A241', NULL, N'lukhanhtrang06092002@gmail.com', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'297429', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'lukhanhtrang06092002gmailco')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'452021122', N'ahihimessi0708@gmail.com', N'CBAFE190BE4B19D52CD353C708B703DA', NULL, N'ahihimessi', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'721052', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'ahihimessi')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'452021154', N'phuongthao8c5@gmail.com', N'9BDDB1611EC736C6D543BD34FC95B90F', NULL, N'Thảo', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'993306', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'thao')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'452021204238', N'huynh211106@gmail.com', N'3D019A75D5D571A932C2C70111DC5845', NULL, N'suvid', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'274259', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'suvid')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'452021204322', N'ngocanhtanda@gmail.com', N'C65506CA812E76077B473EFBD776DE31', NULL, N'lengocanh', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'819519', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'lengocanh')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'45202122822', N'ha.nhi@live.com', N'61BC7B999CBC3507FC9C71F895FD24FD', NULL, N'Julia Hoang', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'274382', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'juliahoang')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'45202125425', N'anhav77@gmail.com', N'CE547393C852652047120BBD6364C40D', NULL, N'anhav', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'932471', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'anhav')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'45202125848', N'khoadon2008@gmail.com', N'408AC2F36CE4D4DCFF807BD6A79054A9', NULL, N'done', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'901521', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'done')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'452021269', N'neik06.arcogroup@gmail.com', N'611D140FF8F7BAA757A34F27C3CB0CE2', NULL, N'Neik', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'886369', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'neik')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'45202141943', N'270407nhatkhanh@gmail.com', N'AF713C77E2D35BBACBEC70B6D12F8CAB', NULL, N'Nhhkhanhh', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'488947', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'nhhkhanhh')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'4520214246', N'quyenbt21@gmail.com', N'7B32A46E853500E661A9D0B14ADA4ABB', NULL, N'Thu Quyên', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'143156', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'thuquyen')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'45202144925', N'lacbilllish@gmail.com', N'2A29247C9F93162B2A5BE2303BAC0E87', NULL, N'lacbilllish', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'310662', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'lacbilllish')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'452021542', N'bobminhtri@gmail.com', N'7D8C750BC39798007C050189427EE7CD', NULL, N'James', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'329848', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'james')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'45202164710', N'phucsax230892@gmail.com', N'A2F3A3A13535F5DA669B3580C4B8B396', NULL, N'phucsax', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'189630', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'phucsax')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'4520218050', N'anhtuan5497@gmail.com', N'AA23A6B879A60223D4BCFB0A32FA9341', NULL, N'anhtuan5497', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'745034', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'anhtuan5497')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'4520218316', N'danglh2007@gmail.com', N'05A2CAC273289E59E81D097895385500', NULL, N'Đăng Lại', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'432882', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'danglai')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'45202183221', N'namkhanh270817@gmail.com', N'509846DD93BBD5A814E19CB6F73769EE', NULL, N'huy', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'394453', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'huy')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'45202185751', N'nluonghao2006@gmail.com', N'34942451512D201D399E5352095F3DD0', NULL, N'haopiano2k6', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'923529', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'haopiano2k6')
+GO
+
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'53202132752', N'aha.edu.vn17@gmail.com', N'5A776B48B54A5C63EDB3345563A6A10D', N'Art House Academy', N'Aha', N'1', NULL, N'category-banner-img.jpg', N'arthouse symbol 02.png', N'Kho lưu trữ sheet nhạc theo yêu cầu', N'536112', N'0', N'.00', N'1', N'https://www.youtube.com/channel/UCMhNREBZgNIkgKoAEKph41Q', N'https://www.facebook.com/trungtamarthouse', NULL, NULL, NULL, NULL, N'aha')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'552021104520', N'nguyentruong3b@gmail.com', N'C917B353956DBC4C8282CDF9729FEBA1', NULL, N'alk112233', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'328161', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'alk112233')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'55202112454', N'tranducluong.1305@gmail.com', N'DEFFE1294E11889455FF96681FC8BFFD', NULL, N'Ducluong13', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'916197', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'ducluong13')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'55202117030', N'thulechannel12345@gmail.com', N'36ADF0DB72FC3049EA3830BF447E6A15', NULL, N'Thư lê', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'391090', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'thule')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'55202117355', N'thuyvtb123@gmail.com', N'F4FC8A416F8BE148DB91D57412CC34A0', NULL, N'Quynhcheese', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'548357', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'quynhcheese')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'55202131750', N'nhungoggytran@gmail.com', N'6D9F100F90F5AFA811A81029D3A5BC86', NULL, N'nhungtran(:3)', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'610781', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'nhungtran3')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'55202132357', N'thanglm23@wru.vn', N'D8F61849C248CE1187262D668D7C96AF', NULL, N'Minhthang', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'384858', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'minhthang')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'55202133447', N'nguyenhuynhthao2007@gmail.com', N'9E7E4EF396B998ED62A4FC0F50607152', NULL, N'dimm7', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'169479', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'dimm7')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'55202135926', N'minhquan185@gmail.com', N'0DAF8B71E691D68546B7989C1DB81176', NULL, N'quann185', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'797996', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'quann185')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'552021401', N'manohack1999@gmail.com', N'43B8E90D78C59B9E828EBC53643B7F5F', NULL, N'hades', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'422545', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'hades')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'55202141517', N'ngocminhnguyenhuynh@gmail.com', N'137E41F34EEDB1AC06F10CF6649C749C', NULL, N'Ngocminh', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'130048', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'ngocminh')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'5520216229', N'sapirisfrisk@gmail.com', N'59ED4988ED6568E7732B607C1177D57B', NULL, N'Yoko', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'688825', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'yoko')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'55202163949', N'phuongntt01012000@gmail.com', N'154C8986371E80B7A71D1E1AFF969856', NULL, N'thanhphuong0101', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'330993', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'thanhphuong0101')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'5520216402', N'maibi96@gmail.com', N'BAA082BE195AD505E2CF4EC668E6A185', NULL, N'199.ngocmai', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'547074', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'199ngocmai')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'55202165715', N'nguyentan@gmail.com', N'47B7E18D5C6A71AA9472F4F6F6048F1C', NULL, N'Tana2004', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'667312', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'tana2004')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'55202173412', N'truongducduy05062004@gmail.com', N'53144D180BD3D0D99681449BF4E3D0C4', NULL, N'Trương Đức Duy', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'596714', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'truongducduy')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'5520217534', N'flowerstar.vn@gmail.com', N'CD6012AC34503D9F21BB0C26FA496649', NULL, N'Hoa', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'153915', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'hoa')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'5520217537', N'bunnhatquang@gmail.com', N'D70E3F025F434170756E1B76C73DB6BE', NULL, N'whitekiller', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'276674', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'whitekiller')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'55202182140', N'quanchien4431@gmail.com', N'E1358955481D346C0314E53B8540D4E2', NULL, N'quandn123', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'865015', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'quandn123')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'55202183337', N'phu6763@gmail.com', N'8C845D7FC2262968BF568B225BA4355D', NULL, N'phu6763@gmail.com', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'723080', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'phu6763gmailcom')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'5520218827', N'bimanan123@gmail.com', N'8BCB48F3E6152655D2E7317072819F97', NULL, N'an Ngô', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'583927', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'anngo')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'55202191730', N'kiethg.1922.206@gmail.com', N'85D4C26D906E910E7FDC854D40982D5A', NULL, N'Kiet0606', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'511629', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'kiet0606')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'55202191920', N'maiquangduc2002@gmail.com', N'FE480BC16C137D74807E610CAEDB4587', NULL, N'meno2112', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'763276', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'meno2112')
 GO
 
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'632021102858', N'xwa15355@zwoho.com', N'4EF59454FCD91A0549E360AFEFC5A6D6', N'Solís Music', N'SolísMusic', N'1', NULL, N'category-banner-img.jpg', N'Thiết kế không tên.png', NULL, N'851223', N'128000', N'5.80', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'solismusic')
 GO
 
-INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'732021204755', N'phong5198nd@gmail.com', N'4EF59454FCD91A0549E360AFEFC5A6D6', N'Top Trending', N'PianoVietnam', N'1', NULL, N'category-banner-img.jpg', N'rose-red-sheet-music-piano-thumbnail.jpg', N'Tổng Hợp các bài hát Việt Nam', N'986461', N'262400', NULL, N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'pianovietnam')
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'65202119250', N'tramanh512019@gmail.com', N'AEEE39804EB0489B618102E32E330FB3', NULL, N'Sasimi', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'726283', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'sasimi')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'65202121330', N'huynhmymi89@gmail.com', N'DF2F47C90E29FE72D7169326F780D0A9', NULL, N'huynhmymi89', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'278246', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'huynhmymi89')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'732021204755', N'phong5198nd@gmail.com', N'4EF59454FCD91A0549E360AFEFC5A6D6', N'Top Trending', N'PianoVietnam', N'1', NULL, N'category-banner-img.jpg', N'son-tung-m-tp-quay-lai-mang-xa-hoi-sau-scandal.jpg', N'Tổng Hợp các bài hát Việt Nam', N'986461', N'678400', NULL, N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'pianovietnam')
 GO
 
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'732021212552', N'tndtrinh17@gmai.com', N'244D7C9A27BC601AAC023C03C841DD90', N'DT PIANO', N'Đoan Trinh', N'1', N'tndtrinh17@gmail.com', N'category-banner-img.jpg', N'anh-title.png', NULL, N'529935', N'48000', N'.72', N'0', NULL, NULL, N'VP Bank', N'149169393', N'Trần Ngọc Đoan Trinh', NULL, N'doantrinh')
 GO
 
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'73202123536', N'hosiduyennt@gmail.com', N'9227796B768CE30F660D454C0FC0FCD0', N'HỒ SĨ DUYÊN', N'Anthony duyen', N'1', NULL, N'category-banner-img.jpg', N'anh dai dien.jpg', NULL, N'617686', N'164000', N'2.90', N'1', N'https://www.youtube.com/channel/UCG6JgBtuAUfghv43-M_O-lg', N'https://www.facebook.com/profile.php?id=100010722703452', N'Bank for Investment and Development of Vietnam', N'14510000091054', N'Hồ Sĩ Duyên', NULL, N'anthonyduyen')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'752021161419', N'ngoleminhthanh117@gmail.com', N'D7EB7FE750BAFE9A425B2D23BDFD2011', NULL, N'ngoleminhthanh18', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'407097', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'ngoleminhthanh18')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'752021191014', N'phamnam181197@gmail.com', N'A37B1E8AE811E0B005C03741DA179FFB', NULL, N'Nam Pham', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'905132', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'nampham')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'752021222427', N'huongvuthu268@gmail.com', N'422034CED160E42ABA52150E045A9CC7', NULL, N'huong', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'216888', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'huong')
 GO
 
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'83202102158', N'babyrosa83@yahoo.com', N'FC7C87A8A7721261C25B0F1AD3BDAF4F', NULL, N'jessica ', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'494141', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'jessica')
@@ -1179,13 +1801,13 @@ GO
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'832021204020', N'simnguyenhung.com@gmail.com', N'99BDA000AD021AA6C435C762BAD99BD9', NULL, N'nguyenhung', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'717379', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'nguyenhung')
 GO
 
-INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'8320212281', N'Phansonmusic@gmail.com', N'E03D39337F786653DAAB546BEA9C8A7B', N'Phan Thành Sơn', N'phansonmusic', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'513200', N'0', N'.00', N'1', N'https://www.youtube.com/channel/UC8uxP4H3SISqEEfAvun5cgQ', NULL, NULL, NULL, NULL, NULL, N'phansonmusic')
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'8320212281', N'Phansonmusic@gmail.com', N'A82526440DC96AFDB4314A2149BFE244', N'Phan Thành Sơn', N'phansonmusic', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'513200', N'32000', N'.00', N'1', N'https://www.youtube.com/channel/UC8uxP4H3SISqEEfAvun5cgQ', NULL, NULL, NULL, NULL, NULL, N'phansonmusic')
 GO
 
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'83202123322', N'dtienss@gmail.com', N'D1FDA104BEE8AF4F1CC17C16DB7D55D4', NULL, N'Nguyen Duc Tien', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'261051', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'nguyenductien')
 GO
 
-INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'83202125130', N'madnessdesmans@gmail.com', N'3D1F751C1F20C8772F71E224114E7FF2', N'Thái Anh', N'thaianh', N'1', NULL, N'category-banner-img.jpg', N'bi.png', N'Hiện mình đang là sinh viên nhạc viện âm nhạc Huế ^^. Mình chuyển soạn nhạc cho vui chứ chuyên ngành của mình là Piano cổ điển.', N'954097', N'0', N'.00', N'1', NULL, N'https://www.facebook.com/thaianhpiano/', NULL, NULL, NULL, NULL, N'thaianh')
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'83202125130', N'madnessdesmans@gmail.com', N'BFD4AF7869BEDBC7011DF371E344C1BD', N'Thái Anh', N'thaianh', N'1', NULL, N'category-banner-img.jpg', N'bi.png', N'Hiện mình đang là sinh viên nhạc viện âm nhạc Huế ^^. Mình chuyển soạn nhạc cho vui chứ chuyên ngành của mình là Piano cổ điển.', N'954097', N'0', N'.00', N'1', NULL, N'https://www.facebook.com/thaianhpiano/', NULL, NULL, NULL, NULL, N'thaianh')
 GO
 
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'83202135129', N'minhnguyet.span1111@gmail.com', N'EF094066B1B2D4E3BD46707DC16C1984', N'Đinh thị minh', N'Dinh Nguyet', N'1', N'minhnguyet.span1111@gmail.com', N'category-banner-img.jpg', N'anh-title.png', NULL, N'689288', N'0', N'.00', N'1', NULL, NULL, N'Vietcombank', N'0441000746741', N'Dinh Thi Minh Nguyet', NULL, N'dinhnguyet')
@@ -1221,13 +1843,25 @@ GO
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'84202123639', N'lethanhpiano@gmail.com', N'935C5AFF08C0F1C605055862BC6D2DC1', NULL, N'lethanh', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'147788', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'lethanh')
 GO
 
-INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'932021171546', N'giangnt.verify@gmail.com', N'BCFB80EE4CF004311F561F3A55C415D1', NULL, N'giangnt', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'347262', N'0', N'.00', N'0', NULL, NULL, NULL, NULL, NULL, NULL, N'giangnt')
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'85202119352', N'linhbeenk@gmail.com', N'2FE62AB4D18C22AAC854090BF00900F6', NULL, N'Khanhlinh', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'726298', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'khanhlinh')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'852021193656', N'nguyendienthaihung1997@gmail.com', N'9B88ED7FF79722903EEB6A3166012DB9', NULL, N'ndthung', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'855887', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'ndthung')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'852021203134', N'tranlinhngan2007@gmail.com', N'1472940AEEDBDC7445D4F9DBC5B3E13D', NULL, N'Trlinh', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'469140', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'trlinh')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'85202121190', N'trang.trinh9894@gmail.com', N'4F0D86ADEEC57CB9C616DA5915EB6D7D', NULL, N'trang.trinh9894', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'276104', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'trangtrinh9894')
+GO
+
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'932021171546', N'giangnt.verify@gmail.com', N'DCD3F242B7C6A5908701C77C4A9B803B', NULL, N'giangnt', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'347262', N'0', N'.00', N'0', NULL, NULL, NULL, NULL, NULL, NULL, N'giangnt')
 GO
 
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'93202119519', N'Josmusicc@gmail.com', N'A34BC022BE252796F555EC48AB0D4B92', NULL, N'Lê Hoàn Vũ', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'285610', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'lehoanvu')
 GO
 
-INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'93202120639', N'dinhquocthai3726@gmail.com', N'6833734A5E3D67BEE88FE99B140CEBFA', N'Dinh Quoc Thai', N'qtmusic', N'1', N'dinhquocthai3726@gmail.com', N'category-banner-img.jpg', N'465EF08B-1990-4D9C-BA1A-5B2FE8798F73.jpeg', NULL, N'554766', N'96000', N'4.35', N'1', N'https://www.youtube.com/channel/UCGwYcLhOWpE-7WowebfzRRg', NULL, N'Vietcombank', N'0121000871002', N'Dinh Quoc Thai', NULL, N'qtmusic')
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'93202120639', N'dinhquocthai3726@gmail.com', N'6833734A5E3D67BEE88FE99B140CEBFA', N'Dinh Quoc Thai', N'qtmusic', N'1', N'dinhquocthai3726@gmail.com', N'category-banner-img.jpg', N'465EF08B-1990-4D9C-BA1A-5B2FE8798F73.jpeg', NULL, N'554766', N'159360', NULL, N'1', N'https://www.youtube.com/channel/UCGwYcLhOWpE-7WowebfzRRg', NULL, N'Vietcombank', N'0121000871002', N'Dinh Quoc Thai', NULL, N'qtmusic')
 GO
 
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'9320214214', N'sunflower200823@gmail.com', N'C5F4C2D79359057A3FA3B5EC2A5AC709', NULL, N'giaptran', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'437128', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'giaptran')
@@ -1314,45 +1948,10 @@ GO
 INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'94202183638', N'tqthai82@gmail.com', N'DB728F204AA88B5EED6D2749180D55CA', NULL, N'tqthai82', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'203246', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'tqthai82')
 GO
 
-
--- ----------------------------
--- Table structure for PhanHoi
--- ----------------------------
-IF EXISTS (SELECT * FROM sys.all_objects WHERE object_id = OBJECT_ID(N'[dbo].[PhanHoi]') AND type IN ('U'))
-	DROP TABLE [dbo].[PhanHoi]
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'95202142545', N'minhtrieth01@gmail.com', N'BB101CE7D87C8DADE2323B92FFC4356D', NULL, N'triet123', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'896146', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'triet123')
 GO
 
-CREATE TABLE [dbo].[PhanHoi] (
-  [Id] nvarchar(50) COLLATE SQL_Latin1_General_CP1_CI_AS  NOT NULL,
-  [Email] varchar(100) COLLATE SQL_Latin1_General_CP1_CI_AS  NULL,
-  [HoTen] nvarchar(100) COLLATE SQL_Latin1_General_CP1_CI_AS  NULL,
-  [NoiDung] nvarchar(500) COLLATE SQL_Latin1_General_CP1_CI_AS  NULL
-)
-GO
-
-ALTER TABLE [dbo].[PhanHoi] SET (LOCK_ESCALATION = TABLE)
-GO
-
-
--- ----------------------------
--- Records of PhanHoi
--- ----------------------------
-INSERT INTO [dbo].[PhanHoi] ([Id], [Email], [HoTen], [NoiDung]) VALUES (N'2021414164430418', N'bang12a12a@gmail.com', N'Phạm Văn Bằng', N'phạm ')
-GO
-
-INSERT INTO [dbo].[PhanHoi] ([Id], [Email], [HoTen], [NoiDung]) VALUES (N'202141416461784', N'bang12a12a@gmail.com', N'Phạm Văn Bằng', N'phạm ')
-GO
-
-INSERT INTO [dbo].[PhanHoi] ([Id], [Email], [HoTen], [NoiDung]) VALUES (N'202141416499748', N'bang12a12a@gmail.com', N'Phạm Văn Bằng', N'phạm ')
-GO
-
-INSERT INTO [dbo].[PhanHoi] ([Id], [Email], [HoTen], [NoiDung]) VALUES (N'202141431013180', N'phonggioday@gmail.com', N'Ok', N'Ok')
-GO
-
-INSERT INTO [dbo].[PhanHoi] ([Id], [Email], [HoTen], [NoiDung]) VALUES (N'202141433424436', N'ok@mail.com', N'phong', N'ok')
-GO
-
-INSERT INTO [dbo].[PhanHoi] ([Id], [Email], [HoTen], [NoiDung]) VALUES (N'202141433438692', N'ok@mail.com', N'phong', N'ok')
+INSERT INTO [dbo].[NguoiDung] ([Id], [Email], [MatKhau], [HoTen], [TenDangNhap], [Quyen], [EmailPaypal], [AnhBia], [AnhDaiDien], [MoTa], [MaXacNhan], [SoDuVN], [SoDu], [Confirm], [YouTube], [Facebook], [TenNganHang], [SoTaiKhoan], [ChuTaiKhoan], [ChiNhanh], [Url]) VALUES (N'95202145933', N'huyentrang2492005@gmail.com', N'C875BB9D26A0BA0A2C759F9FE62E36DB', NULL, N'huyentrang249', N'1', NULL, N'category-banner-img.jpg', N'anh-title.png', NULL, N'398077', N'0', N'.00', N'1', NULL, NULL, NULL, NULL, NULL, NULL, N'huyentrang249')
 GO
 
 
@@ -1413,9 +2012,6 @@ INSERT INTO [dbo].[RutTien] ([Id], [NgayRut], [SoTien], [IdNguoiDung], [EmailPay
 GO
 
 INSERT INTO [dbo].[RutTien] ([Id], [NgayRut], [SoTien], [IdNguoiDung], [EmailPaypal], [NganHang], [SoTaiKhoan], [KieuRut], [ChuTaiKhoan], [TrangThai], [SoTienVN]) VALUES (N'2021414183953487', N'2021-04-14 18:39:53.113', NULL, N'282202175714', NULL, N'Ngân hàng Đông Á', N'00100', N'2', N'Nguyen Phong', N'2', N'60000')
-GO
-
-INSERT INTO [dbo].[RutTien] ([Id], [NgayRut], [SoTien], [IdNguoiDung], [EmailPaypal], [NganHang], [SoTaiKhoan], [KieuRut], [ChuTaiKhoan], [TrangThai], [SoTienVN]) VALUES (N'202152916402811', N'2021-05-29 16:40:02.517', NULL, N'282202175714', NULL, N'Ngân hàng TMCP Ngoại Thương Việt Nam', N'03513513534', N'2', N'dfdfsf', N'1', N'100000')
 GO
 
 
@@ -1944,6 +2540,13 @@ GO
 INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'104202120221', N'1 Phút - Andiez ', N'1030fe7690c4488189c4e739c8adecb1', NULL, N'0', NULL, N'732021204755', N'1 Phút - Andiez ', N'2021-04-10 20:02:21.807', NULL, N'PianoVietnam/1030fe7690c4488189c4e739c8adecb1.pdf', N'6', NULL, N'1-phut-andiez-_pianovietnam', N'1', NULL)
 GO
 
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'1052021204912', N'Tiên Cookie - Thưởng Thức Nỗi Buồn ', N'26fa89301fd54657b0557106113345e0', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/yYu-_DXYQzU" frameborder="0" allowfullscreen></iframe>', N'150000', NULL, N'732021204755', N'Tiên Cookie - Thưởng Thức Nỗi Buồn , thưởng thức nỗi buồn piano, hop am, thuong thuc noi buon hop am,sheet nhạc thương thức nỗi buồn', N'2021-05-10 20:49:12.680', NULL, N'PianoVietnam/26fa89301fd54657b0557106113345e0.pdf', N'6', N'PianoVietnam/29111052021204830.mp3', N'tien-cookie-thuong-thuc-noi_pianovietnam', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'1052021231225', N'Thịnh Suy - THANH', N'e5d0b489625846b393152d4009c91c05', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/_DW7IBSN0rY" frameborder="0" allowfullscreen></iframe>', N'150000', NULL, N'732021204755', N'Thanh piano
+thịnh suy thanh piano sheet, piano sheet, piano cover, thanh piano sheet', N'2021-05-10 23:12:25.463', NULL, N'PianoVietnam/e5d0b489625846b393152d4009c91c05.pdf', N'4', N'PianoVietnam/42241052021231129.mp3', N'thinh-suy-thanh_pianovietnam', N'1', NULL)
+GO
+
 INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'1132021104822', N'Fukashigi no Carte', N'1927ece293464bec85014cc82d2b96e9', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/Zp8paCvQjhY" frameborder="0" allowfullscreen></iframe>', N'0', N'.00', N'282202175714', N'Mai Sakurajima (Asami Seto), Tomoe Koga (Nao Touyama), Rio Futaba (Atsumi Tanezaki), Nodoka Toyohama (Maaya Uchida), Kaede Azusawara (Yurika Kubo), Shouko Makinohara (Inori Minase), Fukashigi no Carte, Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai, Rascal Does Not Dream of Bunny Girl Senpai, 青春ブタ野郎はバニーガール先輩の夢を見ない, 不可思議のカルテ, Fonzi, fonzimgm, Synthesia, Piano Version, Piano Solo, opening, ending, OP, ED, OST, Main Theme, Arrangement, Full version, piano cover anime, Sheet Music', N'2021-03-11 10:48:22.843', NULL, N'anime/1927ece293464bec85014cc82d2b96e9.pdf', N'12', NULL, N'fukashigi-no-carte_anime', N'1', NULL)
 GO
 
@@ -2212,6 +2815,12 @@ Hướng dẫn đàn Piano Đêm lao xao
 Cover piano Đêm Lao Xao', N'2021-04-13 09:34:03.067', N'Anthony duyen/3412337134202193359.mid', N'Anthony duyen/23a3873728134a399e81a52cab924241.pdf', N'5', N'Anthony duyen/755913420219283.mp3', N'dem-lao-xao_anthony_duyen', N'1', NULL)
 GO
 
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'13520212566', N'ANH CỨ NGỠ - HOÀI LÂM ( Tone Gốc )', N'37353d3e4aec438bbe3f582281138993', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/TLzMcbNrRXI" frameborder="0" allowfullscreen></iframe>', N'150000', NULL, N'732021204755', N'ANH CỨ NGỠ - HOÀI LÂM Piano Sheet', N'2021-05-13 02:56:06.817', NULL, N'PianoVietnam/37353d3e4aec438bbe3f582281138993.pdf', N'6', N'PianoVietnam/6386135202125528.mp3', N'anh-cu-ngo-hoai-lam-tone-go_pianovietnam', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'135202125929', N'ANH CỨ NGỠ - HOÀI LÂM ( Tone Am )', N'906f1f12a3054948804f1c14ed907db8', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/TLzMcbNrRXI" frameborder="0" allowfullscreen></iframe>', N'150000', NULL, N'732021204755', N'ANH CỨ NGỠ - HOÀI LÂM piano easy', N'2021-05-13 02:59:29.957', NULL, N'PianoVietnam/906f1f12a3054948804f1c14ed907db8.pdf', N'5', N'PianoVietnam/5915135202125919.mp3', N'anh-cu-ngo-hoai-lam-tone-am_pianovietnam', N'1', NULL)
+GO
+
 INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'143202105937', N'Sơn Tùng M-TP - Lạc Trôi - Piano Cover by Kim Hoàng Huy', N'dec02f065bb94b8aa0289d736e357b9b', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/ch06pmSpo6E" frameborder="0" allowfullscreen></iframe>', N'0', N'.00', N'732021204755', N'sơn tùng, mtp, lạc trôi, sơn tùng mtp, piano cover, piano arrangement, edm, nhạc trẻ, việt nam, vietnamese, nắng ấm xa dần, em của ngày hôm qua, không phải dạng vừa đâu, son tung, son tung mtp, m-tp, classic piano, classic, classical, piano, cover, sheet, sheet music, midi"', N'2021-03-14 00:59:37.240', NULL, N'PianoVietnam/dec02f065bb94b8aa0289d736e357b9b.pdf', N'10', N'PianoVietnam/4326143202105925.mp3', N'son-tung-mtp-lac-troi-piano_pianovietnam', N'1', NULL)
 GO
 
@@ -2254,6 +2863,15 @@ GO
 INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'1442021213253', N'Biệt khúc chờ nhau - Tân dòng sông ly biệt SHEET', N'0add021295084c0d9fbc2dbf126fa1da', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/bpLi2onf2S8" frameborder="0" allowfullscreen></iframe>', N'50000', NULL, N'8320212281', N'biệt khúc chờ nhau sheet, tân dòng sông ly biệt', N'2021-04-14 21:32:53.860', NULL, N'phansonmusic/0add021295084c0d9fbc2dbf126fa1da.pdf', N'3', NULL, N'biet-khuc-cho-nhau-tan-dong_phansonmusic', N'1', NULL)
 GO
 
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'14520215382', N'Đen - Trốn Tìm ft. MTV band', N'b96bdd74a321437393ad84384c05b8df', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/Ws-QlpSltr8" frameborder="0" allowfullscreen></iframe>', N'0', NULL, N'732021204755', N'Tron tim piano, tron tim den piano', N'2021-05-14 05:38:02.147', NULL, N'PianoVietnam/b96bdd74a321437393ad84384c05b8df.pdf', N'5', N'PianoVietnam/2150145202153739.mp3', N'den-tron-tim-ft-mtv-band_pianovietnam', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'15202102455', N'Níu Duyên sheet piano', N'd06fb0fcdb534de192d6f4f4cd419534', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/oOllvniPUbY" frameborder="0" allowfullscreen></iframe>', N'100000', NULL, N'73202123536', N'níu duyên sheet piano', N'2021-05-01 00:24:55.393', NULL, N'Anthony duyen/d06fb0fcdb534de192d6f4f4cd419534.pdf', N'7', N'Anthony duyen/317115202102433.mp3', N'niu-duyen-sheet-piano_anthony_duyen', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'15202102840', N'Em Say Rồi', N'7d3d0c1c123841d28b1b7af980876f05', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/eBh34u2cwYE" frameborder="0" allowfullscreen></iframe>', N'100000', NULL, N'73202123536', N'emsayroi', N'2021-05-01 00:28:40.833', NULL, N'Anthony duyen/7d3d0c1c123841d28b1b7af980876f05.pdf', N'5', NULL, N'em-say-roi_anthony_duyen', N'1', NULL)
+GO
+
 INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'1532021184254', N'TXT - Run Away ', N'a1c808685e68412b8ea3c8c5be2d8d04', NULL, N'0', NULL, N'282202175714', N'TXT - Run Away ', N'2021-03-15 18:42:54.737', NULL, N'anime/a1c808685e68412b8ea3c8c5be2d8d04.pdf', N'7', NULL, N'txt-run-away-_anime', N'1', NULL)
 GO
 
@@ -2261,6 +2879,63 @@ INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNgu
 GO
 
 INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'154202192325', N'Proud of you', N'07320a858ee64acf812670ace6a51c66', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/jRB0skj9XMQ" frameborder="0" allowfullscreen></iframe>', N'100000', NULL, N'73202123536', N'Proud of you', N'2021-04-15 09:23:25.950', NULL, N'Anthony duyen/07320a858ee64acf812670ace6a51c66.pdf', N'4', N'Anthony duyen/122115420219203.mp3', N'proud-of-you_anthony_duyen', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'1552021204738', N'Anh Cứ Ngỡ - Hoài Lâm', N'3c66ce8e7bbe433884d2ce38b52643d3', NULL, N'100000', NULL, N'53202132752', N'#Anhcungo, #HoaiLam, #Piano', N'2021-05-15 20:47:38.807', NULL, N'Aha/3c66ce8e7bbe433884d2ce38b52643d3.pdf', N'2', NULL, N'anh-cu-ngo-hoai-lam_aha', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'1552021205146', N'Như Mùa Tuyết Đầu Tiên - Văn Mai Hương', N'efc2be7550304f9c8f46dec85eae11f6', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/3EyxsHhbOHM" frameborder="0" allowfullscreen></iframe>', N'120000', NULL, N'53202132752', N'#Nhumuatuyetdautien
+#VanMaiHuong
+#Piano', N'2021-05-15 20:51:46.213', N'Aha/5590379155202120511.mid', N'Aha/efc2be7550304f9c8f46dec85eae11f6.pdf', N'2', NULL, N'nhu-mua-tuyet-dau-tien-van-_aha', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'1552021205432', N'Bước Qua Mùa Cô Đơn - Vũ.', N'f084c3b1d3144ab7a22aa07ce044afe0', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/C4fTB5N_6es" frameborder="0" allowfullscreen></iframe>', N'250000', NULL, N'53202132752', N'#Buocquamuacodon
+#Piano
+#ArtHouseAcademy', N'2021-05-15 20:54:32.260', NULL, N'Aha/f084c3b1d3144ab7a22aa07ce044afe0.pdf', N'4', NULL, N'buoc-qua-mua-co-don-vu_aha', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'1552021211320', N'Từ Thích Thích Thành Thương Thương - Amee ft Hoàng Dũng', N'5d8ca00b72f14af099d1c2fc258d9d0b', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/nhhq4uU4nlo" frameborder="0" allowfullscreen></iframe>', N'250000', NULL, N'53202132752', N'#Tuthichthichthanhthuongthuong
+#Piano
+#AHA', N'2021-05-15 21:13:20.677', NULL, N'Aha/5d8ca00b72f14af099d1c2fc258d9d0b.pdf', N'4', NULL, N'tu-thich-thich-thanh-thuong_aha', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'155202121139', N'Muộn Rồi Mà Sao Còn - Sơn Tùng MT-P', N'960ff8a26fe64b6fb87d104f7db7c150', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/-QrtvF6WD8M" frameborder="0" allowfullscreen></iframe>', N'150000', NULL, N'53202132752', N'#Muonroimasaocon
+#SonTungMTP
+#Piano', N'2021-05-15 21:01:39.640', NULL, N'Aha/960ff8a26fe64b6fb87d104f7db7c150.pdf', N'4', NULL, N'muon-roi-ma-sao-con-son-tun_aha', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'1552021211511', N'Tình Như Lá Bay Xa - Jimmi Nguyễn', N'9853e833305644d4bbb0fb63b63a695f', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/vPx8qfB5IJ4" frameborder="0" allowfullscreen></iframe>', N'250000', NULL, N'53202132752', N'Tinhnhulabayxa, ArtHouseAcademy', N'2021-05-15 21:15:11.833', NULL, N'Aha/9853e833305644d4bbb0fb63b63a695f.pdf', N'5', NULL, N'tinh-nhu-la-bay-xa-jimmi-ng_aha', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'1552021211722', N'Tháng Mấy Em Nhớ Anh (Cảm Âm)  - Hà Anh Tuấn', N'ee374f55333f46d9a012ef754abb5dbe', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/keqKtxTcGe8" frameborder="0" allowfullscreen></iframe>', N'130000', NULL, N'53202132752', N'Thangmayemnhoanh, ArtHouseAcademy, Piano', N'2021-05-15 21:17:22.647', NULL, N'Aha/ee374f55333f46d9a012ef754abb5dbe.pdf', N'2', NULL, N'thang-may-em-nho-anh-ha-anh_aha', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'1552021212217', N'Tháng Mấy Em Nhớ Anh  - Hà Anh Tuấn', N'4c8aed2b2b2643c3acd3ae1632f0989a', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/keqKtxTcGe8" frameborder="0" allowfullscreen></iframe>', N'250000', NULL, N'53202132752', N'Thangmayemnhoanh, ArtHouseacademy, Piano', N'2021-05-15 21:22:17.110', NULL, N'Aha/4c8aed2b2b2643c3acd3ae1632f0989a.pdf', N'4', NULL, N'thang-may-em-nho-anh-ha-anh_aha-24', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'1552021212426', N'Sài Gòn đau lòng quá (Cảm âm) - HỨA KIM TUYỀN x HOÀNG DUYÊN', N'5fae8f5e6e93478da30ab675dd0b0223', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/keqKtxTcGe8" frameborder="0" allowfullscreen></iframe>', N'150000', NULL, N'53202132752', N'Saigondaulongqua, Piano, Sheet, ArtHouseacademy', N'2021-05-15 21:24:26.343', NULL, N'Aha/5fae8f5e6e93478da30ab675dd0b0223.pdf', N'3', NULL, N'sai-gon-dau-long-qua-cam-am_aha', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'1552021212658', N'Sài Gòn đau lòng quá - HỨA KIM TUYỀN x HOÀNG DUYÊN', N'738f797ca0444792b2ad22208343b272', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/8f-2tDml2cE" frameborder="0" allowfullscreen></iframe>', N'260000', NULL, N'53202132752', N'SaiGondaulongqua, Piano, Sheet, Arthouseacademy', N'2021-05-15 21:26:58.153', NULL, N'Aha/738f797ca0444792b2ad22208343b272.pdf', N'5', NULL, N'sai-gon-dau-long-qua-hua-ki_aha', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'1552021212856', N'Qua Khung Cửa Sổ - Chillies', N'84adec3bd1254950b662605a7a481f43', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/SahMppFgOcw" frameborder="0" allowfullscreen></iframe>', N'260000', NULL, N'53202132752', N'Quakhungcuaso, piano, sheet, arthouseacademy', N'2021-05-15 21:28:56.683', NULL, N'Aha/84adec3bd1254950b662605a7a481f43.pdf', N'5', NULL, N'qua-khung-cua-so-chillies_aha', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'1552021213119', N'Chuyện Rằng - Thịnh Suy', N'77adb865f08f49a28af8ad623be2f65d', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/d_7WeI2os5E" frameborder="0" allowfullscreen></iframe>', N'250000', NULL, N'53202132752', N'Chuyenrang, Piano, Sheet, Arthouseacademy', N'2021-05-15 21:31:19.730', NULL, N'Aha/77adb865f08f49a28af8ad623be2f65d.pdf', N'5', NULL, N'chuyen-rang-thinh-suy_aha', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'1552021213240', N'Chúng Ta Của Hiện Tại - Sơn Tùng MT-P', N'702c11bb7d8149b4a9a28f334a363465', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/k6Q5D77-mP8" frameborder="0" allowfullscreen></iframe>', N'270000', NULL, N'53202132752', N'Chungtacuahientai, Piano, Sheet, Arthouseacademy', N'2021-05-15 21:32:40.493', NULL, N'Aha/702c11bb7d8149b4a9a28f334a363465.pdf', N'5', NULL, N'chung-ta-cua-hien-tai-son-t_aha', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'1552021213439', N'Nàng Thơ - Hoàng Dũng', N'705a47dc7e204fffad6aed4bec3859e2', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/zd8Wrn2NqQk" frameborder="0" allowfullscreen></iframe>', N'250000', NULL, N'53202132752', N'Nangtho, Piano, Sheet', N'2021-05-15 21:34:39.243', NULL, N'Aha/705a47dc7e204fffad6aed4bec3859e2.pdf', N'4', NULL, N'nang-tho-hoang-dung_aha', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'155202121363', N'MASCARA - Chillies', N'7770f2e5296444b68074489e6341d85b', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/7lyDSG3Ebmk" frameborder="0" allowfullscreen></iframe>', N'250000', NULL, N'53202132752', N'MASCARA. Piano, Sheet, Arthouseacademy', N'2021-05-15 21:36:03.290', NULL, N'Aha/7770f2e5296444b68074489e6341d85b.pdf', N'5', NULL, N'mascara-chillies_aha', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'155202121830', N'Chẳng Thể Tìm Được Em - PhucXp ft. FreakD ', N'e0d1ef8e3c464d2fabe4cd568b5dd36c', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/k8HTvf_W97A" frameborder="0" allowfullscreen></iframe>', N'250000', NULL, N'53202132752', N'#Changthetimduocem
+#ArtHouseAcademy', N'2021-05-15 21:08:30.220', NULL, N'Aha/e0d1ef8e3c464d2fabe4cd568b5dd36c.pdf', N'5', NULL, N'chang-the-tim-duoc-em-phucx_aha', N'1', NULL)
 GO
 
 INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'163202121024', N'Canon in D - Pachelbel ', N'026214e959e845489b5ad3307372f90d', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/6jSLH9CDPPQ" frameborder="0" allowfullscreen></iframe>', N'0', N'.00', N'832021175153', N'canon in d, canon, canon piano, pachelbel canon, pachelbel canon in d, pachelbel, canon in d piano, kassia, piano cover, led, piano, visualizer, synthesia, classical, classical music, female classical pianists,Pachelbel, piano, canon, best,piano, cover, instrumental, sheet, midi, beautiful, relaxing, grand, synthogy, ivory, jacob&#39;s, jacobs, classical, johann, pachelbel, canon, tutorial, study music', N'2021-03-16 02:10:24.663', NULL, N'BookPiano/026214e959e845489b5ad3307372f90d.pdf', N'5', N'BookPiano/79761632021292.mp3', N'canon-in-d-pachelbel-_bookpiano', N'1', NULL)
@@ -2299,7 +2974,16 @@ GO
 INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'184202131133', N'Tất Cả Là Hồng Ân (L.m. Huy Hoàng) | Piano cover | Linh Nhi', N'a44120338f224902981847c778b4f8f2', NULL, N'0', NULL, N'732021204755', N'Tất Cả Là Hồng Ân (L.m. Huy Hoàng) | Piano cover | Linh Nhi,Tất Cả Là Hồng Ân ', N'2021-04-18 03:11:33.123', NULL, N'PianoVietnam/a44120338f224902981847c778b4f8f2.pdf', N'5', NULL, N'tat-ca-la-hong-an-lm-huy-ho_pianovietnam', N'0', NULL)
 GO
 
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'185202121955', N'SẮP 30 - TRỊNH ĐÌNH QUANG', N'248d66d85622453ea9186dab2aeb14df', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/TF70IYJN4sc" frameborder="0" allowfullscreen></iframe>', N'0', NULL, N'113202121544', N'sap 30 piano sheet, Sắp 30 piano sheet, sắp 30 sheet piano, sắp 30 sheet pdf', N'2021-05-18 02:19:55.150', NULL, N'WindMusic/248d66d85622453ea9186dab2aeb14df.pdf', N'6', NULL, N'sap-30-trinh-dinh-quang_windmusic', N'1', NULL)
+GO
+
 INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'19420210121', N'Tìm Hành Tinh Khác - Vũ Cát Tường ft. Onic', N'8c6fe52136ab4d2f903137f839fc7cb8', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/ocNWBEbEpCk" frameborder="0" allowfullscreen></iframe>', N'100000', NULL, N'732021204755', N'Tìm Hành Tinh Khác sheet piano, Tìm Hành Tinh Khác  piano sheet, Tìm Hành Tinh Khác  pdf', N'2021-04-19 00:01:21.833', NULL, N'PianoVietnam/8c6fe52136ab4d2f903137f839fc7cb8.pdf', N'7', N'PianoVietnam/137719420210118.mp3', N'tim-hanh-tinh-khac-vu-cat-t_pianovietnam-88', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'2252021224048', N'Trái Đất Đẹp Nhất Khi Có Em ', N'60119d0814db4ccda4739f062f42614e', NULL, N'0', NULL, N'2252021222938', N'Đức Phúc, Trái đất đẹp nhất khi có em ', N'2021-05-22 22:40:48.237', NULL, N'khoitrn12@gmail.com/60119d0814db4ccda4739f062f42614e.pdf', N'4', NULL, N'trai-dat-dep-nhat-khi-co-em_khoitrn', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'225202182459', N'BTS (방탄소년단) ''Butter'' ', N'5fb63f7a29e543509a5ca15f2878ef0b', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/WMweEpGlu_U" frameborder="0" allowfullscreen></iframe>', N'0', NULL, N'732021204755', N'Butter piano sheet,BTS (방탄소년단) ''Butter'' sheet piano', N'2021-05-22 08:24:59.573', NULL, N'PianoVietnam/5fb63f7a29e543509a5ca15f2878ef0b.pdf', N'3', N'PianoVietnam/5609225202182456.mp3', N'bts-butter-_pianovietnam', N'1', NULL)
 GO
 
 INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'23202115849', N'Ayasa – 告白之夜 钢琴抒情版「告白の夜」The Reason Why Piano', N'dcc61cb9d9674fdeb8086d6070e5ce02', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/Br5Cg12duUM" frameborder="0" allowfullscreen></iframe>', N'200000', NULL, N'282202175714', N'atos, ayasa, thereasonwhy, catlookingsky, gatoolhandoceu, meme,piano tutorial, ayasa the reason why, the reason why ayasa piano, the reason why ayasa, the reason why piano, ayasa, ayasa theater episode 7 piano, the reason why ayaka piano,Ayasa, 告白の夜, 告白の夜 piano, the reason why piano, ayasa the reason why piano, 島村絢沙, 絢沙告白之夜piano, 絢沙告白之夜, 告白之夜, 告白之夜钢琴, 告白之夜钢琴谱, 告白之夜piano, 告白之夜抖音, 抖音告白之夜, 抖音告白之夜 piano, 抖音告白之夜钢琴, 告白の夜钢琴, ayasa告白之夜, ayasa告白之夜钢琴, ayasa告白之夜钢琴谱, ayasa告白之夜piano, ayasa the reason why, ayasa the reason why instrument, the reason why tiktok, tiktok the reason why, tiktok 告白之夜', N'2021-03-02 01:58:49.117', N'anime/446530623202115530.mid', N'anime/dcc61cb9d9674fdeb8086d6070e5ce02.pdf', N'6', N'anime/852323202115540.mp3', N'ayasa-the-reason-why-piano_anime', N'1', NULL)
@@ -2308,10 +2992,61 @@ GO
 INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'232021288', N'Inuyasha - To Love''s End - Futari no Kimochi Piano', N'c859c4c97d564f86a07e4bc41ba6cd77', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/ymBuQ6XVVzw" frameborder="0" allowfullscreen></iframe>', N'200000', N'9.09', N'282202175714', N'piano, piano music, sleep, sleeping, sleep music, relaxing, relaxing music, beautiful piano, music, instrumental, relax, relaxation, beautiful music, peder b. helland, soothing relaxation, relaxing,futari no kimochi, to love&#39;s end, to loves end, inuyasha, ost, inuyasha ost, anime, soundtrack, album, song, emotional, sad, synthesia, piano, piano tutorial, tutorial, marioverehrer, famous, calm, love, midipiano, easy, simple, beginner, japan', N'2021-03-02 02:08:08.573', N'anime/3609546232021287.mid', N'anime/c859c4c97d564f86a07e4bc41ba6cd77.pdf', N'6', N'anime/60752320212743.mp3', N'inuyasha-to-loves-end-futar_anime', N'0', NULL)
 GO
 
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'2452021191354', N'Sao anh chưa về nhà (Amee ft. Ricky Star)', N'abacf4e26bf54c95a51cc948db98fcf6', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/xWM-pZGYLr8" frameborder="0" allowfullscreen></iframe>', N'100000', NULL, N'284202124552', N'sao anh chua ve nha, sao anh chưa về nhà, sao anh chua ve nha amee, sao anh chưa về nhà amee, amee ricky star, amee, ricky star, sao annh chua ve nha ame rickystar, sao anh chưa về nhà amee rickystar, sao anh chua ve nha sheet, sao anh chưa về nhà sheet, sao anh chua ve nha pdf, sao anh chưa về nhà pdf, sao anh chua ve nha piano, sao anh chưa về nhà piano', N'2021-05-24 19:13:54.960', NULL, N'hocnhacdeom/abacf4e26bf54c95a51cc948db98fcf6.pdf', N'5', NULL, N'sao-anh-chua-ve-nha-amee-ft_hocnhacdeom', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'2452021191950', N'Đừng lo anh đợi mà - Mr. Siro', N'0ea67a8e770a44c790c53838231097e7', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/Jlg_Xo7suYs" frameborder="0" allowfullscreen></iframe>', N'100000', NULL, N'284202124552', N'dung lo anh doi ma, đừng lo anh đợi mà, dung lo anh doi ma mr siro, đừng lo anh đợi mà mr siro, mr. siro, mr siro, siro, dung lo anh doi ma piano sheet, đừng lo anh đợi mà piano sheet, dung lo anh doi ma pdf, đừng lo anh đợi mà pdf, dung lo anh doi ma full, đừng lo anh đợi mà full', N'2021-05-24 19:19:50.430', NULL, N'hocnhacdeom/0ea67a8e770a44c790c53838231097e7.pdf', N'7', NULL, N'dung-lo-anh-doi-ma-mr-siro_hocnhacdeom', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'2452021192221', N'Đừng chờ anh nữa - Tăng Phúc', N'3d672366bd7d4d288794232b211e908a', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/pJJ7wd4027M" frameborder="0" allowfullscreen></iframe>', N'150000', NULL, N'284202124552', N'đừng chờ anh nữa, dung cho anh nua, đừng chờ anh nữa sheet, dung cho anh nua sheet, đừng chờ anh nữa piano, dung cho anh nua piano, đừng chờ anh nữa pdf, dung cho anh nua pdf, dung cho anh nua tang phuc, đừng chờ anh nữa tăng phúc, dung cho anh nua, tang phuc, tăng phúc, tang phuc sheet, tăng phúc sheet', N'2021-05-24 19:22:21.697', NULL, N'hocnhacdeom/3d672366bd7d4d288794232b211e908a.pdf', N'5', NULL, N'dung-cho-anh-nua-tang-phuc_hocnhacdeom', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'245202119241', N'Khóc cùng em - Mr. Siro', N'7691ae37aa1043c18405ad453b723b12', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/WiJJj9CMLAY" frameborder="0" allowfullscreen></iframe>', N'100000', NULL, N'284202124552', N'khoc cung em, khóc cùng em, khoc cung em sheet, khóc cùng em sheet, khoc cung em piano, khóc cùng em piano, khoc cung em piano sheet, khóc cùng em piano sheet, khoc cung em pdf, khóc cùng em pdf, khoc cung em piano cover, khóc cùng em piano, mr. siro, mr siro, siro', N'2021-05-24 19:02:41.230', NULL, N'hocnhacdeom/7691ae37aa1043c18405ad453b723b12.pdf', N'8', NULL, N'khoc-cung-em-mr-siro_hocnhacdeom', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'2452021192548', N'Chân ái - Orange ft. Khói ft. Châu Đăng Khoa', N'102115a7d45249d6b4eb410079d242a7', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/hM6o8zoudE0" frameborder="0" allowfullscreen></iframe>', N'100000', NULL, N'284202124552', N'chan ai, chân ái, chan ai orange, chân ái orange, chan ai chau dang khoa, chân ái châu đăng khoa, orange chau dang khoa, orange châu đăng khoa, chan ai piano, chân ái piano, chan ai sheet, chân ái sheet, chan ai pdf, chân ái pdf, orange khoi chau dang khoa, orange khói châu đăng khoa', N'2021-05-24 19:25:48.617', NULL, N'hocnhacdeom/102115a7d45249d6b4eb410079d242a7.pdf', N'4', NULL, N'chan-ai-orange-ft-khoi-ft-c_hocnhacdeom', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'2452021192754', N'Sợ rằng em biết anh còn yêu em - Juun Đăng Dũng ft. Orange', N'06a30722900a4e0180436cffb2bf84af', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/FEOk4kty4As" frameborder="0" allowfullscreen></iframe>', N'100000', NULL, N'284202124552', N'so rang em biet anh con yeu em, sợ rằng em biết anh còn yêu em, so rang em biet anh con yeu em piano, sợ rằng em biết anh còn yêu em piano, so rang em biet anh con yeu em sheet, sợ rằng em biết anh còn yêu em sheet, so rang em biet anh con yeu em pdf, sợ rằng em biết anh còn yêu em pdf, juun dang dung orange, juun đăng dũng orange, vuong anh tu, vương anh tú', N'2021-05-24 19:27:54.943', NULL, N'hocnhacdeom/06a30722900a4e0180436cffb2bf84af.pdf', N'5', NULL, N'so-rang-em-biet-anh-con-yeu_hocnhacdeom', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'2452021193040', N'Ai đợi mình được mãi - Thanh Hưng', N'8a19fa1410d84e05a6723326811df5cc', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/1WvTx2Ds9aw" frameborder="0" allowfullscreen></iframe>', N'50000', NULL, N'284202124552', N'ai doi minh duoc mai, ai đợi mình được mãi, ai doi minh duoc mai sheet, ai đợi mình được mãi sheet, ai doi minh duoc mai pdf, ai đợi mình được mãi pdf, ai doi minh duoc mai piano, ai đợi mình được mãi piano, ai doi minh duoc mai lyrics, ai đợi mình được mãi lyrics, thanh hung, thanh hưng, thanh hung sheet, thanh hưng sheet', N'2021-05-24 19:30:40.117', NULL, N'hocnhacdeom/8a19fa1410d84e05a6723326811df5cc.pdf', N'6', NULL, N'ai-doi-minh-duoc-mai-thanh-_hocnhacdeom', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'2452021193343', N'Nhắm mắt thấy mùa hè - Nguyên Hà', N'9504fe2276454ec396e6eb8e1d8b3986', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/S1Zt92xd4Y8" frameborder="0" allowfullscreen></iframe>', N'150000', NULL, N'284202124552', N'nham mat thay mua he, nhắm mắt thấy mùa hè, ho tien dat, hồ tiến đạt, nguyen ha, nguyên hà, ho tien dat nguyen ha, hồ tiến đạt nguyên hà, nham mat thay mua he pdf, nhắm mắt thấy mùa hè pdf, nham mat thay mua he sheet, nhắm mắt thấy mùa hè sheet, nham mat thay mua he piano', N'2021-05-24 19:33:43.993', NULL, N'hocnhacdeom/9504fe2276454ec396e6eb8e1d8b3986.pdf', N'6', NULL, N'nham-mat-thay-mua-he-nguyen_hocnhacdeom', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'245202119418', N'Ghencovy (Ghen Cô Vy) - Khắc Hưng ft. Min ft. Erik', N'16bd911341a44f498654c52f83aa3a09', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/TlnPqX-d6YY" frameborder="0" allowfullscreen></iframe>', N'0', NULL, N'284202124552', N'ghen co vy, ghen cô vy, ghencovy, khắc hưng erik, khac hung erik, khac hung min erik, khắc hưng min erik, ghen co vy pdf, ghen cô vy pdf, ghen co vy sheet, ghen cô vy sheet, ghen co vy piano, ghen cô vy piano, ghen co vy lyric, ghen cô vy lyric, ghen co vy lyrics, ghen cô vy lyrics, ghen co vy full, ghen cô vy full, endcov', N'2021-05-24 19:41:08.793', NULL, N'hocnhacdeom/16bd911341a44f498654c52f83aa3a09.pdf', N'6', NULL, N'ghencovy-ghen-co-vy-khac-hu_hocnhacdeom', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'245202119657', N'Vùng ký ức - Chillies', N'c6b3290c9dd94872af5e5b575230727f', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/f-evRHTpovo" frameborder="0" allowfullscreen></iframe>', N'100000', NULL, N'284202124552', N'vung ky uc, vùng ký ức, vung ky uc piano, vùng ký ức piano, vung ky uc sheet, vùng ký ức sheet, vung ky uc lyric, vùng ký ức lyric, vung ky uc pdf, vùng ký ức pdf, vung ky uc chillies, vùng ký ức chillies, vung ky uc rock, vùng ký ức rock, chillies, chillie', N'2021-05-24 19:06:57.887', NULL, N'hocnhacdeom/c6b3290c9dd94872af5e5b575230727f.pdf', N'6', NULL, N'vung-ky-uc-chillies_hocnhacdeom', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'245202119941', N'Mascara - Chillies', N'4d57117f08a94488a2d28cca091e2bd6', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/mreApiYDUNU" frameborder="0" allowfullscreen></iframe>', N'100000', NULL, N'284202124552', N'mascara, mascara chillies, mascara piano sheet, mascara pdf, mascara piano, mascara chillies pdf, mascara piano pdf, mascara lyric, mascara lyrics, chillies, chillie', N'2021-05-24 19:09:41.650', NULL, N'hocnhacdeom/4d57117f08a94488a2d28cca091e2bd6.pdf', N'7', NULL, N'mascara-chillies_hocnhacdeom', N'1', NULL)
+GO
+
 INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'25320212715', N'SAO CHA KHÔNG - PHAN MẠNH QUỲNH COVER + SHEET  | BỐ GIÀ OST 2021', N'e80c7f53317241c4a7a7c09c33e8408d', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/TD7sBUigDIU" frameborder="0" allowfullscreen></iframe>', N'0', N'.00', N'732021204755', N'a piano solo, hoang linh piano, dạy dàn piano, trấn thành, tran thanh, hai tran thanh, trấn thành mới nhất, hai tran thanh moi, bo gia, trấn thành bố già, bố già trấn thành, ngọc giàu, phim chieu rap, phim rap, BỐ GIÀ ĐIỆN ẢNH, phim chiếu rạp, phim rạp, phim điện ảnh, phim tran thanh, sao cha khong, nhạc phim bố già, nhac phim bo gia dien anh, sot bo gia, ost bố già, phan manh quynh, bo gia phan manh quynh, sao cha không phan mạnh quỳnh, sao cha không', N'2021-03-25 02:07:15.783', NULL, N'PianoVietnam/e80c7f53317241c4a7a7c09c33e8408d.pdf', N'3', N'PianoVietnam/165025320212655.mp3', N'sao-cha-khong-phan-manh-quy_pianovietnam', N'0', NULL)
 GO
 
-INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'25520210649', N'Nơi này có anh', N'7deb90ce2cd3422faf1aaec4cd97caa3', N'<iframe src="https://www.youtube.com/embed/ybdHMw6ZYb8" frameborder="0" allowfullscreen></iframe>', N'100000', NULL, N'202142205947991', N'nơi này có anh, sơn tùng mtp', N'2021-05-25 00:06:49.307', NULL, N'bang12a12a/.pdf', N'3', NULL, N'noi-nay-co-anh_bang12a12a', N'1', N'10000')
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'2742021195450', N'Learn to meow - Học tiếng mèo kêu - Tiểu Phong Phong | Piano cover |', NULL, N'<iframe width="560" height="315" src="https://www.youtube.com/embed/zk8JZMJAhDQ" frameborder="0" allowfullscreen></iframe>', N'99000', NULL, N'93202120639', N'học tiếng mèo kêu, tiểu phong phong, nhạc trung quốc, piano, piano cover, cover, tutorial, piano tutorial,', N'2021-04-27 19:54:50.920', NULL, N'qtmusic/.pdf', NULL, NULL, N'learn-to-meow-hoc-tieng-meo_qtmusic', N'0', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'2742021195845', N'Learn to meow - Học tiếng mèo kêu - Tiểu Phong Phong | Piano cover |', N'80e0873b197c4f5e8e608669e0021fe1', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/zk8JZMJAhDQ" frameborder="0" allowfullscreen></iframe>', N'99000', NULL, N'93202120639', N'learn to meow, học tiếng mèo kêu, piano, cover, piano cover, piano tutorial, tutorial, tiểu phong phong, nhạc trung quốc, nhạc hoa,', N'2021-04-27 19:58:45.923', N'qtmusic/18663732742021195730.mid', N'qtmusic/80e0873b197c4f5e8e608669e0021fe1.pdf', N'3', N'qtmusic/22232742021195727.mp3', N'learn-to-meow-hoc-tieng-meo_qtmusic-10', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'274202120046', N'Happy Birthday Easy - Traditional', N'6efb2992656948cdbf696301b5942f1d', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/PM-iAUyueQ8" frameborder="0" allowfullscreen></iframe>', N'0', NULL, N'93202120639', N'happy birthay, piano, piano cover, piano tutorial, tutorial,', N'2021-04-27 20:00:46.470', NULL, N'qtmusic/6efb2992656948cdbf696301b5942f1d.pdf', N'2', N'qtmusic/797327420212005.mp3', N'happy-birthday-easy-traditi_qtmusic', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'2742021201345', N'The First Noel - Trad. English carol', N'd2322ac0282649fc8a489da79a11b0fe', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/8no4iABH9vI" frameborder="0" allowfullscreen></iframe>', N'99000', NULL, N'93202120639', N'noel, piano noel, piano, the first noel, piano cover, cover, tutorial, piano tutorial,', N'2021-04-27 20:13:45.260', N'qtmusic/54573372742021201217.mid', N'qtmusic/d2322ac0282649fc8a489da79a11b0fe.pdf', N'2', N'qtmusic/56392742021201210.mp3', N'the-first-noel-trad-english_qtmusic', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'2742021201610', N'O HOLY NIGHT - Adophe Charles Adam', N'e2f2df806e134d2cb4397063616a43c5', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/KnCz8iiUR_0" frameborder="0" allowfullscreen></iframe>', N'99000', NULL, N'93202120639', N'piano, piano cover, piano tutorial, noel, noel piano, o holy night,', N'2021-04-27 20:16:10.837', N'qtmusic/54576262742021201451.mid', N'qtmusic/e2f2df806e134d2cb4397063616a43c5.pdf', N'2', N'qtmusic/33802742021201443.mp3', N'o-holy-night-adophe-charles_qtmusic', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'2742021201824', N'Angels We Have Heard On High', N'374a641027e74330a327b6341a4207ab', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/vxo4iMOEL0c" frameborder="0" allowfullscreen></iframe>', N'99000', NULL, N'93202120639', N'piano, piano cover, piano tutorial, tutorial, cover, noel, piano noel, angels we have heard on high,', N'2021-04-27 20:18:24.587', N'qtmusic/65220612742021201727.mid', N'qtmusic/374a641027e74330a327b6341a4207ab.pdf', N'2', N'qtmusic/49172742021201734.mp3', N'angels-we-have-heard-on-hig_qtmusic', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'274202184821', N'''Sài Gòn Đau Lòng Quá'' toàn kỷ niệm chúng ta.... - Hứa Kim Tuyền | Piano cover |', N'c250e2ea74cc4cb99769ca8351150e9d', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/NHWzTyCVboM" frameborder="0" allowfullscreen></iframe>', N'99000', NULL, N'93202120639', N'sài gòn đau lòng quá, hứa kim tuyền, piano, piano tutorial, hướng dẫn piano, cover, piano cover', N'2021-04-27 08:48:21.677', N'qtmusic/8175006274202184632.mid', N'qtmusic/c250e2ea74cc4cb99769ca8351150e9d.pdf', N'5', N'qtmusic/2498274202184653.mp3', N'sai-gon-dau-long-qua-toan-k_qtmusic', N'1', NULL)
 GO
 
 INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'2822021181925', N'TXT - Run Away " Piano "', N'32a4dc3ea7d04a9190e9be4b3cfa56d9', NULL, N'0', N'.00', N'282202191830', NULL, N'2021-02-28 18:19:25.410', NULL, N'KevinTran99/32a4dc3ea7d04a9190e9be4b3cfa56d9.pdf', N'3', NULL, N'txt--run-away-piano_kevintran99', N'1', NULL)
@@ -2353,6 +3088,18 @@ GO
 INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'282202192546', N'[Domestic na Kanojo OP] Kawaki wo Ameku', N'b9c1c8185f474ac68828b93a07bf1668', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/Q5b5unyP8BM" frameborder="0" allowfullscreen></iframe>', N'100000', N'4.54', N'282202191830', N'kawaki wo ameku piano sheet,kawaki,ameku,Domestic na Kanojo OP,[Domestic na Kanojo OP] Kawaki wo Ameku', N'2021-02-28 09:25:46.237', N'KevinTran99/6918842282202192543.mid', N'KevinTran99/b9c1c8185f474ac68828b93a07bf1668.pdf', N'3', NULL, N'domestic-na-kanojo-op-kawak_kevintran99', N'1', NULL)
 GO
 
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'2942021213750', N'MUỘN RỒI MÀ SAO CÒN - SƠN TÙNG M-TP', N'cb4f1fadc5bc452fb7bfbccc4a9d58a7', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/xypzmu5mMPY" frameborder="0" allowfullscreen></iframe>', N'150000', NULL, N'732021204755', N'Muon roi ma sao con piano, muon roi ma sao con sheet piano, piano sheet muon roi ma sao con', N'2021-04-29 21:37:50.307', NULL, N'PianoVietnam/cb4f1fadc5bc452fb7bfbccc4a9d58a7.pdf', N'6', N'PianoVietnam/48792942021213735.mp3', N'muon-roi-ma-sao-con-son-tun_pianovietnam', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'304202113143', N'Orange x Hoàng Dũng - Khi Em Lớn Piano ', N'a99d4233fd6b43b9bcbcdbc3a8fc0aae', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/uw-Z0SWzO7U" frameborder="0" allowfullscreen></iframe>', N'100000', NULL, N'732021204755', N'Orange x Hoàng Dũng - Khi Em Lớn Piano ', N'2021-04-30 01:31:43.347', NULL, N'PianoVietnam/a99d4233fd6b43b9bcbcdbc3a8fc0aae.pdf', N'4', NULL, N'orange-x-hoang-dung-khi-em-_pianovietnam', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'35202103826', N'MUỘN RỒI MÀ SAO CÒN - SƠN TÙNG M-TP ', N'be8dfd7e5d394f56b2f3112abf16dad6', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/xypzmu5mMPY" frameborder="0" allowfullscreen></iframe>', N'150000', NULL, N'1320213422', N'MUỘN RỒI MÀ SAO CÒN - SƠN TÙNG M-TP Free  sheet piano, bản nhạc muon roi ma sao con, miễn phí sheet nhạc, miễn phí piano sheet', N'2021-05-03 00:38:26.887', NULL, N'PhongPiano/be8dfd7e5d394f56b2f3112abf16dad6.pdf', N'6', NULL, N'muon-roi-ma-sao-con-son-tun_phongpiano', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'35202142857', N'Em Đừng Khóc - Chillies ', N'32901e4b97974f71aa3d20cc18bc2522', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/zZWICdCVKXo" frameborder="0" allowfullscreen></iframe>', N'100000', NULL, N'732021204755', N'Em Đừng Khóc piano sheet, em dung khoc piano sheet, em dung khoc piano, em dung khoc ban nhac', N'2021-05-03 04:28:57.413', NULL, N'PianoVietnam/32901e4b97974f71aa3d20cc18bc2522.pdf', N'5', N'PianoVietnam/234135202142855.mp3', N'em-dung-khoc-chillies-_pianovietnam', N'1', NULL)
+GO
+
 INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'43202121496', N'Souvenir d''enfance -Richard Clayderman', NULL, N'<iframe width="560" height="315" src="https://www.youtube.com/embed/TOX1MrmtzOw" frameborder="0" allowfullscreen></iframe>', N'0', N'.00', N'1320213422', N'laviernoten, klavier Lernen, Piano Partitions, Piano Tutoriel, Piano Partituras, 鋼琴樂譜, 鋼琴教程, Фортепиано Ноты, фортепиано урок, Piyano Notaları, Piano Notes, Piano Tutorial, Music Sheet, Souvenirs D´Enfance, Richard Clayderman, Paul de Senneville, Virtual Piano, Piano Online, Piano Lesson, piano cover, piano pieces, easy, chord, scale, classical, beginner, pop, kids, piano anime, keyboard, learn piano, piano notes, PDF, Movie, Children, Games, Anime Music, Opera, Symphony, opus, sonata', N'2021-03-04 21:49:06.037', N'PhongPiano/4256801432021214710.mid', N'PhongPiano/.pdf', NULL, NULL, N'souvenir-denfance-richard-c_phongpiano', N'0', NULL)
 GO
 
@@ -2372,6 +3119,12 @@ INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNgu
 GO
 
 INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'5320213373', N'Passacaglia', N'899afc274682432c91238bd76ecbddfa', NULL, N'100000', N'4.54', N'53202132752', N'Passacaglia Piano Sheet Free', N'2021-03-05 03:37:03.167', NULL, N'Aha/899afc274682432c91238bd76ecbddfa.pdf', N'3', NULL, N'passacaglia_aha', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'55202171214', N'A Little Love - Fiona Fung', N'ecfc26b06fee452d8ce1aea0d14c2062', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/oXmspz9yQS8" frameborder="0" allowfullscreen></iframe>', N'0', NULL, N'732021204755', N'A Little Love - Fiona Fung', N'2021-05-05 07:12:14.047', NULL, N'PianoVietnam/ecfc26b06fee452d8ce1aea0d14c2062.pdf', N'3', NULL, N'a-little-love-fiona-fung_pianovietnam', N'1', NULL)
+GO
+
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'5520217749', N'Jack | Đom Đóm ', N'f6ab7dc23d574455bf77508b5c2476d8', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/4CCGI83vOVo" frameborder="0" allowfullscreen></iframe>', N'0', NULL, N'732021204755', N'dom dom piano', N'2021-05-05 07:07:49.307', NULL, N'PianoVietnam/f6ab7dc23d574455bf77508b5c2476d8.pdf', N'6', NULL, N'jack-dom-dom-_pianovietnam', N'1', NULL)
 GO
 
 INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'632021103532', N'Winter Sonata - Only You - Park Jung Won ', N'e5a2ea92933c468ab1f1a2ec427ee850', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/3oByp2hx7Mw" frameborder="0" allowfullscreen></iframe>', N'0', N'.00', N'632021102858', N'Only You - from &quot;Winter Sonata&quot; Violin Cover by Kezia AmeliaFor business inquiries:keziaameliaofficia@gmail.com Follow me on Instagram for short covers!https..."><meta name="keywords" content="violin, violinist, indonesia, kezia, keziamelia, kezia amelia, instrumental, cover, piano, biola, gitar, chord, lindsey stirling, david garrett, bond, vanessa mae, pemain biola, performance, wedding, jakarta, surabaya, medan, natasha wilona, jisoo, blackpink', N'2021-03-06 10:35:32.797', N'SolísMusic/3039568632021103313.mid', N'SolísMusic/e5a2ea92933c468ab1f1a2ec427ee850.pdf', N'3', N'SolísMusic/2362632021103456.mp3', N'winter-sonata-only-you-park_solismusic', N'0', NULL)
@@ -2589,7 +3342,7 @@ GO
 INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'9320213648', N'Chopin Preludes', N'337f059764bc480c839d979db67b323e', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/ISQdvh1BMuI" frameborder="0" allowfullscreen></iframe>', N'0', N'.00', N'83202125130', N'Chopn, Preludes, Prelude', N'2021-03-09 03:06:48.670', NULL, N'thaianh/337f059764bc480c839d979db67b323e.pdf', N'47', NULL, N'chopin-preludes_thaianh', N'1', NULL)
 GO
 
-INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'9420211135', N'SÀI GÒN ĐAU LÒNG QUÁ'' toàn kỷ niệm chúng ta HỨA KIM TUYỀN x HOÀNG DUYÊN', N'2b56faeca19e4c649d420658f6272cab', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/6yBG3QhzifY" frameborder="0" allowfullscreen></iframe>', N'50000', NULL, N'732021204755', N'Hoàng Linh piano, hoang linh piano, piano cover, piano on pc, piano tutorial, a piano solo, piano hay, piano solo, piano sheet, dạy dàn piano, cách chơi piano, hứa kim tuyền, hua kim tuyen, hoàng duyên, hoang duyen, sài gòn đau lòng quá, sai gon dau long qua, sài gòn đau lòng quá hứa kim tuyền, sài gòn đau long quá hứa kim tuyền, sài gòn đau lòng quá toàn kỷ niệm chúng ta, sài gòn đau lòng quá hoàng duyên, sai gon dau long qua hua kim tuyen, sgdlq,nth audio, nth entertainment, sheet piano hay, sài gòn đau lòng quá, sai gon đau lòng quá, sài gòn đau lòng quá toàn kỷ niệm chúng ta, sai gon dau long qua, sài gòn đau lòng quá hoàng duyên, sài gòn đau lòng quá karaoke, saigon đau lòng quá, sài gòn đau lòng quá hứa kim tuyền, sai gòn đau lòng quá, saigon dau long qua, sgdlq, sài gòn đau lòng, sài gòn đau lòng quá sheet, sài gòn đau lòng quá piano, sài gòn đau lòng quá sheet piano, sài gòn đau lòng piano tutorial', N'2021-04-09 01:01:35.467', NULL, N'PianoVietnam/2b56faeca19e4c649d420658f6272cab.pdf', N'4', N'PianoVietnam/32169420211040.mp3', N'sai-gon-dau-long-qua-toan-k_pianovietnam', N'1', NULL)
+INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'9420211135', N'SÀI GÒN ĐAU LÒNG QUÁ'' toàn kỷ niệm chúng ta HỨA KIM TUYỀN x HOÀNG DUYÊN', N'2b56faeca19e4c649d420658f6272cab', N'<iframe width="560" height="315" src="https://www.youtube.com/embed/6yBG3QhzifY" frameborder="0" allowfullscreen></iframe>', N'150000', NULL, N'732021204755', N'Hoàng Linh piano, hoang linh piano, piano cover, piano on pc, piano tutorial, a piano solo, piano hay, piano solo, piano sheet, dạy dàn piano, cách chơi piano, hứa kim tuyền, hua kim tuyen, hoàng duyên, hoang duyen, sài gòn đau lòng quá, sai gon dau long qua, sài gòn đau lòng quá hứa kim tuyền, sài gòn đau long quá hứa kim tuyền, sài gòn đau lòng quá toàn kỷ niệm chúng ta, sài gòn đau lòng quá hoàng duyên, sai gon dau long qua hua kim tuyen, sgdlq,nth audio, nth entertainment, sheet piano hay, sài gòn đau lòng quá, sai gon đau lòng quá, sài gòn đau lòng quá toàn kỷ niệm chúng ta, sai gon dau long qua, sài gòn đau lòng quá hoàng duyên, sài gòn đau lòng quá karaoke, saigon đau lòng quá, sài gòn đau lòng quá hứa kim tuyền, sai gòn đau lòng quá, saigon dau long qua, sgdlq, sài gòn đau lòng, sài gòn đau lòng quá sheet, sài gòn đau lòng quá piano, sài gòn đau lòng quá sheet piano, sài gòn đau lòng piano tutorial', N'2021-04-09 01:01:35.467', NULL, N'PianoVietnam/2b56faeca19e4c649d420658f6272cab.pdf', N'4', N'PianoVietnam/32169420211040.mp3', N'sai-gon-dau-long-qua-toan-k_pianovietnam', N'1', NULL)
 GO
 
 INSERT INTO [dbo].[SanPham] ([Id], [Ten], [Anh], [Video], [GiaVN], [Gia], [IdNguoiDung], [MoTa], [Ngay], [DuongDanFileMidi], [DuongDan], [SoTrang], [DuongDanFileMp3], [Url], [TrangThai], [CaSiId]) VALUES (N'942021184843', N'Phi Điểu Và Ve Sầu | 飛鳥和蟬 - Nhậm Nhiên | 任然 (TikTok-Hot-Song)', N'd258710ca6334a50a82543e5b8bd1f75', NULL, N'0', NULL, N'732021204755', N'Piano Tutorial, Synthesia, sheet music, sheet piano, hướng dẫn chơi, midi, piano, hướng dẫn chơi piano, bài hát, sheet, piano sheet, nhạc phim, 钢琴, 鋼琴, 鋼琴樂譜, 钢琴乐谱, tiktok, douyin, 飛鳥和蟬, Fei Niao He Chan, Birds and Cicadas, Ren Ran, 任然, Phi Điểu Và Ve Sầu, Nhậm Nhiên,Piano Lessons Online, Piano Lessons, Piano Score, Music Score, Piano Sheet, Piano Tutorial, Cover, Keyboard, 鋼琴教學, Synthesia, Midi, How To, How to Play, Pop, 國語, 普通話, 流行歌, Love, Love Song, Sad, Sad Song, 鋼琴伴奏, 主題曲, 片尾曲, 電影, 電視劇, 鋼琴自學, 電子琴, 歌譜, 成人鋼琴, 彈琴, 抖音, 最紅, 最火, 純音樂, 鋼琴譜, 五線譜, 鋼琴版, 輕音樂, 任然, 飛鳥和蟬, 飛鳥和蟬 鋼琴, 飛鳥和蟬 鋼琴教學, 飛鳥和蟬 鋼琴譜, 飛鳥和蟬 鋼琴版, 飛鳥和蟬 鋼琴伴奏, 飛鳥和蟬 鋼琴獨奏, 飛鳥和蟬 Piano, 飛鳥和蟬 Piano Cover, 飛鳥和蟬 Piano Tutorial, 飛鳥和蟬 自彈自唱, 飛鳥和蟬 彈唱', N'2021-04-09 18:48:43.310', NULL, N'PianoVietnam/d258710ca6334a50a82543e5b8bd1f75.pdf', N'3', N'PianoVietnam/1916942021184749.mp3', N'phi-dieu-va-ve-sau-nham-nhi_pianovietnam', N'1', NULL)
@@ -2819,6 +3572,21 @@ INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'1042021
 GO
 
 INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'1042021202212', N'104202120221', N'12102020194120')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'10520212049121', N'1052021204912', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'10520212049122', N'1052021204912', N'12102020194128')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'10520212312251', N'1052021231225', N'12102020194120')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'10520212312252', N'1052021231225', N'12102020194128')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'10520212312253', N'1052021231225', N'12102020194130')
 GO
 
 INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'11320211048221', N'1132021104822', N'12102020194129')
@@ -4774,6 +5542,12 @@ GO
 INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'134202193432', N'13420219343', N'12102020194120')
 GO
 
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'135202125661', N'13520212566', N'12102020194120')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'1352021259291', N'135202125929', N'12102020194120')
+GO
+
 INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'1432021059371', N'143202105937', N'12102020194119')
 GO
 
@@ -4849,6 +5623,24 @@ GO
 INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'14420212132532', N'1442021213253', N'12102020194120')
 GO
 
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'145202153821', N'14520215382', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'145202153822', N'14520215382', N'12102020194128')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'152021024551', N'15202102455', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'152021024552', N'15202102455', N'12102020194120')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'152021028401', N'15202102840', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'152021028402', N'15202102840', N'12102020194120')
+GO
+
 INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'15320211842541', N'1532021184254', N'12102020194128')
 GO
 
@@ -4865,6 +5657,54 @@ INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'1542021
 GO
 
 INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'1542021923253', N'154202192325', N'12102020194128')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'15520212047381', N'1552021204738', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'15520212051461', N'1552021205146', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'15520212054321', N'1552021205432', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'15520212113201', N'1552021211320', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'1552021211391', N'155202121139', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'15520212115111', N'1552021211511', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'15520212117221', N'1552021211722', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'15520212122171', N'1552021212217', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'15520212124261', N'1552021212426', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'15520212126581', N'1552021212658', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'15520212128561', N'1552021212856', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'15520212131191', N'1552021213119', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'15520212132401', N'1552021213240', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'15520212134391', N'1552021213439', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'1552021213631', N'155202121363', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'1552021218301', N'155202121830', N'12102020194119')
 GO
 
 INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'1632021210241', N'163202121024', N'12102020194119')
@@ -4945,6 +5785,9 @@ GO
 INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'1842021311331', N'184202131133', N'12102020194120')
 GO
 
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'1852021219551', N'185202121955', N'12102020194120')
+GO
+
 INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'194202101211', N'19420210121', N'12102020194119')
 GO
 
@@ -4952,6 +5795,15 @@ INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'1942021
 GO
 
 INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'194202101213', N'19420210121', N'12102020194128')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'22520212240481', N'2252021224048', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'2252021824591', N'225202182459', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'2252021824592', N'225202182459', N'12102020194128')
 GO
 
 INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'232021158491', N'23202115849', N'12102020194119')
@@ -4969,19 +5821,103 @@ GO
 INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'2320212882', N'232021288', N'12102020194129')
 GO
 
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'24520211913541', N'2452021191354', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'24520211913542', N'2452021191354', N'12102020194120')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'24520211919501', N'2452021191950', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'24520211919502', N'2452021191950', N'12102020194120')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'24520211922211', N'2452021192221', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'24520211922212', N'2452021192221', N'12102020194120')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'2452021192411', N'245202119241', N'12102020194120')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'24520211925481', N'2452021192548', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'24520211925482', N'2452021192548', N'12102020194124')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'24520211927541', N'2452021192754', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'24520211927542', N'2452021192754', N'12102020194120')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'24520211930401', N'2452021193040', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'24520211930402', N'2452021193040', N'12102020194120')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'24520211933431', N'2452021193343', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'24520211933432', N'2452021193343', N'12102020194120')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'24520211933433', N'2452021193343', N'12102020194123')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'2452021194181', N'245202119418', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'2452021194182', N'245202119418', N'12102020194124')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'2452021196571', N'245202119657', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'2452021196572', N'245202119657', N'12102020194120')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'2452021196573', N'245202119657', N'12102020194127')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'2452021199411', N'245202119941', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'2452021199412', N'245202119941', N'12102020194120')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'2452021199413', N'245202119941', N'12102020194127')
+GO
+
 INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'253202127151', N'25320212715', N'12102020194120')
 GO
 
 INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'253202127152', N'25320212715', N'12102020194130')
 GO
 
-INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'255202106491', N'25520210649', N'12102020194119')
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'27420211954501', N'2742021195450', N'12102020194119')
 GO
 
-INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'255202106492', N'25520210649', N'12102020194124')
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'27420211958451', N'2742021195845', N'12102020194119')
 GO
 
-INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'255202106493', N'25520210649', N'12102020194130')
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'2742021200461', N'274202120046', N'12102020194130')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'27420212013451', N'2742021201345', N'12102020194130')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'27420212016101', N'2742021201610', N'12102020194130')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'27420212018241', N'2742021201824', N'12102020194130')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'2742021848211', N'274202184821', N'12102020194120')
 GO
 
 INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'28220211819251', N'2822021181925', N'12102020194119')
@@ -5059,10 +5995,28 @@ GO
 INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'2822021925462', N'282202192546', N'12102020194129')
 GO
 
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'29420212137501', N'2942021213750', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'29420212137502', N'2942021213750', N'12102020194128')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'3042021131431', N'304202113143', N'12102020194120')
+GO
+
 INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'332021849281', N'33202184928', N'12102020194119')
 GO
 
 INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'332021849282', N'33202184928', N'12102020194123')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'352021038261', N'35202103826', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'352021428571', N'35202142857', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'352021428572', N'35202142857', N'12102020194128')
 GO
 
 INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'432021214961', N'43202121496', N'12102020194123')
@@ -5135,6 +6089,24 @@ INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'5420210
 GO
 
 INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'54202104542', N'5420210454', N'12102020194123')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'552021712141', N'55202171214', N'12102020194120')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'552021712142', N'55202171214', N'12102020194123')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'552021712143', N'55202171214', N'12102020194129')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'55202177491', N'5520217749', N'12102020194119')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'55202177492', N'5520217749', N'12102020194120')
+GO
+
+INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'55202177493', N'5520217749', N'12102020194128')
 GO
 
 INSERT INTO [dbo].[SanPham_Loai] ([Id], [IdSanPham], [IdLoai]) VALUES (N'6320211035321', N'632021103532', N'12102020194119')
@@ -5544,7 +6516,8 @@ CREATE TABLE [dbo].[TinTuc] (
   [Anh2] nvarchar(max) COLLATE SQL_Latin1_General_CP1_CI_AS  NULL,
   [NoiDung2] nvarchar(max) COLLATE SQL_Latin1_General_CP1_CI_AS  NULL,
   [Anh3] nvarchar(max) COLLATE SQL_Latin1_General_CP1_CI_AS  NULL,
-  [NoiDung3] nvarchar(max) COLLATE SQL_Latin1_General_CP1_CI_AS  NULL
+  [NoiDung3] nvarchar(max) COLLATE SQL_Latin1_General_CP1_CI_AS  NULL,
+  [Loai] varchar(255) COLLATE SQL_Latin1_General_CP1_CI_AS  NULL
 )
 GO
 
@@ -5555,6 +6528,9 @@ GO
 -- ----------------------------
 -- Records of TinTuc
 -- ----------------------------
+INSERT INTO [dbo].[TinTuc] ([Id], [Title], [NgayDang], [Anh1], [NoiDung1], [Anh2], [NoiDung2], [Anh3], [NoiDung3], [Loai]) VALUES (N'202161105318959', N'Trao đổi với Zing sáng 1/6, Ủy viên Bộ Chính trị', N'2021-06-01 10:53:18.653', N'202161105247596.jpg', N'Trao đổi với Zing sáng 1/6, Ủy viên Bộ Chính trị, Bí thư Thành uỷ TP.HCM Nguyễn Văn Nên cho biết ông đã nắm được tình hình quận Gò Vấp lúng túng khi thực hiện lệnh phong tỏa từ hôm qua. “Tối qua, tôi đã trực tiếp chỉ đạo quận và Ban Chỉ đạo phòng, chống dịch các cấp có giải pháp xử lý tình trạng này”, ông Nên nói.', N'202161105313772.jpg', N'Trao đổi với Zing sáng 1/6, Ủy viên Bộ Chính trị, Bí thư Thành uỷ TP.HCM Nguyễn Văn Nên cho biết ông đã nắm được tình hình quận Gò Vấp lúng túng khi thực hiện lệnh phong tỏa từ hôm qua. “Tối qua, tôi đã trực tiếp chỉ đạo quận và Ban Chỉ đạo phòng, chống dịch các cấp có giải pháp xử lý tình trạng này”, ông Nên nói.', N'202161105317400.jpg', N'Trao đổi với Zing sáng 1/6, Ủy viên Bộ Chính trị, Bí thư Thành uỷ TP.HCM Nguyễn Văn Nên cho biết ông đã nắm được tình hình quận Gò Vấp lúng túng khi thực hiện lệnh phong tỏa từ hôm qua. “Tối qua, tôi đã trực tiếp chỉ đạo quận và Ban Chỉ đạo phòng, chống dịch các cấp có giải pháp xử lý tình trạng này”, ông Nên nói.', NULL)
+GO
+
 
 -- ----------------------------
 -- Primary Key structure for table Anh_SanPham
@@ -5569,6 +6545,15 @@ GO
 -- Primary Key structure for table Banner
 -- ----------------------------
 ALTER TABLE [dbo].[Banner] ADD CONSTRAINT [PK_Banner] PRIMARY KEY CLUSTERED ([Id])
+WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
+ON [PRIMARY]
+GO
+
+
+-- ----------------------------
+-- Primary Key structure for table CaSi
+-- ----------------------------
+ALTER TABLE [dbo].[CaSi] ADD CONSTRAINT [PK__CaSi__3214EC07EB134280] PRIMARY KEY CLUSTERED ([Id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -5593,6 +6578,15 @@ GO
 
 
 -- ----------------------------
+-- Primary Key structure for table HopAm
+-- ----------------------------
+ALTER TABLE [dbo].[HopAm] ADD CONSTRAINT [PK__HopAm__3214EC0741C40F53] PRIMARY KEY CLUSTERED ([Id])
+WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
+ON [PRIMARY]
+GO
+
+
+-- ----------------------------
 -- Primary Key structure for table Loai
 -- ----------------------------
 ALTER TABLE [dbo].[Loai] ADD CONSTRAINT [PK_Loai] PRIMARY KEY CLUSTERED ([Id])
@@ -5605,15 +6599,6 @@ GO
 -- Primary Key structure for table NguoiDung
 -- ----------------------------
 ALTER TABLE [dbo].[NguoiDung] ADD CONSTRAINT [PK_NguoiDung] PRIMARY KEY CLUSTERED ([Id])
-WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
-ON [PRIMARY]
-GO
-
-
--- ----------------------------
--- Primary Key structure for table PhanHoi
--- ----------------------------
-ALTER TABLE [dbo].[PhanHoi] ADD CONSTRAINT [PK__PhanHoi__3214EC07E35ED877] PRIMARY KEY CLUSTERED ([Id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -5641,15 +6626,6 @@ GO
 -- Primary Key structure for table SanPham_Loai
 -- ----------------------------
 ALTER TABLE [dbo].[SanPham_Loai] ADD CONSTRAINT [PK_SanPham_Loai] PRIMARY KEY CLUSTERED ([Id])
-WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
-ON [PRIMARY]
-GO
-
-
--- ----------------------------
--- Primary Key structure for table TinTuc
--- ----------------------------
-ALTER TABLE [dbo].[TinTuc] ADD CONSTRAINT [PK__TinTuc__3214EC072C322AD4] PRIMARY KEY CLUSTERED ([Id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
